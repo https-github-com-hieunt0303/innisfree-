@@ -7,38 +7,40 @@ h1 {
     width: 50px;
 }
 
-.container-header a {
+.icon {
+    float: right;
+    padding: 5px;
+}
+
+.title {
+    float: left;
+    padding: 5px;
     text-decoration: none;
     color: black;
 }
 
-.container-header a:hover {
+.title:hover {
     color: #024137;
 }
 
-.item1 {
-    grid-area: item1;
-    
+table {
+    width: 100%;
 }
 
-.item2 {
-    grid-area: item2;
+.notification-header {
+    background-color: #024137;
+    padding: 3px;
 }
 
-.container-logo-header {
-    grid-area: item3;
+.notification-header p {
+    display: inline;
+    border: 1px solid;
+    color: #024137;
+    background-color: white;
+    padding: 2px;
 }
 
-.container-header {
-    display: grid;
-    grid-template-areas: 'item1 item2 item3';
-}
-
-.item2 {
-    display: block;
-    margin: 0 auto;
-}
-
-.icon-logo {
-    float: right;
+.notification-header b {
+    display: inline;
+    color: white
 }
