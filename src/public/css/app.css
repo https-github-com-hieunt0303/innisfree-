@@ -1,6 +1,5 @@
-h1 {
-    color: red;
-}
+
+/* ====================================  header  ===================================*/
 
 .logo_header img {
     height: 50px;
@@ -43,4 +42,11 @@ table {
 .notification-header b {
     display: inline;
     color: white
+}
+
+/*=========================================== footer  =============================== */
+.foot-menu th,td{
+    color: white;
+    padding: 2px;
+    padding-left: 42px;
 }
