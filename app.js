@@ -6,16 +6,19 @@ const route = require('./src/routes')
 const app = express()
 const port = process.env.PORT || 3004
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname,'src','public')))
+console.log(__dirname)
 
+// config handlebars
 app.engine('hbs', handlebars({
     extname: '.hbs',
 }
 ));
 app.set('view engine', '.hbs');
 
-app.set('views', path.join(__dirname, 'src/resources', 'views'));
-
+// set lại route handlebars
+app.set('views', path.join(__dirname, 'src','resources', 'views'));
+// cho phép http hiển thị json kiểu uncorder
 app.use(express.urlencoded())
 
 
