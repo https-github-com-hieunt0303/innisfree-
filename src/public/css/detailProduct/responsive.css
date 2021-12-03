@@ -1,0 +1,94 @@
+
+@media (max-width:1025px) and (min-width:601px) {
+    #dp-grid-detailProducts{
+        margin: 10px 100px 10px 100px;
+    }
+    .dp-container-ratingbar{
+        margin: 5px 50px 5px 50px;
+    }
+}
+
+@media (max-width:600px) {
+    #layout-grid-left-detail-product {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    #top-page {
+        grid-template-columns: 100%;
+        margin: 0;
+    }
+    #item-show-img-product {
+        width: 100%;
+        height: 55vmax;
+    }
+    #dp-img-slide {
+        float: none;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin: 5px 20px 5px 20px;
+    }
+    #detail-information-header-product, #detail-header-information-header-product, #container-anchor-top, #dp-info-detailProduct {
+        display: none;
+    }
+    .div-img-information-detail-product {
+        display: block;
+        text-align: right;
+    }
+    .dp-star-reviews p {
+        top: 5px;
+    }
+    #dp-btn-product {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        z-index: 3;
+    }
+    #dp-btn-product button {
+        border-radius: 0;
+    }
+    #dp-grid-detailProducts {
+        grid-template-columns: 100%;
+        margin: 0px;
+        text-align: left;
+    }
+    #dp-grid-detailProducts p {
+        margin: 0;
+    }
+    /* grid cho 3 cái mục detail information product */
+    .grid-container-information-detail-product {
+        padding: 5px;
+        border-bottom: 1px #D9D9D9 solid;
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+    /* related product */
+    .db-btn-slide-relatedProducts,.db-btn-slide-relatedProducts{
+        display: none;
+    }
+    .dp-grid-slide-relatedProducts{
+        grid-template-columns: 50% 50%;
+    }
+    .dp-container-slide-relatedProducts{
+        display: block;
+    }
+    .dp-container-products{
+        padding: 0;
+        margin: 5px 0 5px 0;
+    }
+    .dp-container-slide-relatedProducts{
+        margin: 0;
+    }
+    /* cmt */
+    .dp-container-ratingbar{
+        margin: 5px 10px 5px 10px;
+    }
+    .dp-container-cmt{
+        margin: 10px 0 40px 0;
+    }
+    .dp-number-reviews-1star{
+        margin: 0 5px 0 5px;
+    }
+}

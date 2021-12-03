@@ -1,0 +1,161 @@
+<link rel="stylesheet" href="/css/account&order/style.css">
+<link rel="stylesheet" href="/css/account&order/base.css">
+<div class="container">
+    <p style="font-family: Montserrat; font-size: 24px; color: #336E51;">Shopping Cart</p>
+    <!-- Cart Items Layout -->
+    <div class="row1">
+        <div class="col1 products">
+            <h1>Products</h1>
+            <ul>
+                <li class="product">
+                    <div class="li">
+                        <div class="itemImg">
+                            <img src="/img/account&order/SP1.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="itemInfo">
+                            <h2 class="name">Bakuchiol Retinol Alternative Smoothing Serum</h2>
+                            <p class="size">Size: 30ml</p>
+                            <div class="quantity">
+                                <p>Quantity </p>
+                                <input type="number" value="1" style="width: 60px; height: 30px;">
+                            </div>
+                            <p class="price">$50.00</p>
+                        </div>
+                    </div>
+                    <div class="object">
+                        <div class="round">
+                            <input type="checkbox" unchecked id="checkbox" />
+                            <label for="checkbox"></label>
+                        </div>
+                        <i class="fa fa-trash"></i>
+                    </div>
+                    <hr>
+                </li>
+                <li class="product">
+                    <div class="li">
+                        <div class="itemImg">
+                            <img src="/img/account&order/SP2.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="itemInfo">
+                            <h2 class="name">Coco Rose Exfoliating Body Scrub</h2>
+                            <p class="size">Size: 8 oz | 226 g glass jar </p>
+                            <div class="quantity">
+                                <p>Quantity </p>
+                                <input type="number" value="1" style="width: 60px; height: 30px;">
+                            </div>
+                            <p class="price">$88.00</p>
+                        </div>
+                    </div>
+                    <div class="object">
+                        <div class="round">
+                            <input type="checkbox" unchecked id="checkbox1" />
+                            <label for="checkbox1"></label>
+                        </div>
+                        <i class="fa fa-trash"></i>
+                    </div>
+                    <hr>
+                </li>
+                <li class="product">
+                    <div class="li">
+                        <div class="itemImg">
+                            <img src="/img/account&order/SP3.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="itemInfo">
+                            <h2 class="name">Blue Tansy Invisible Pores Resurfacing Clarity Mask</h2>
+                            <p class="size">Size: 2.02 oz | 60 mL glass jar</p>
+                            <div class="quantity">
+                                <p>Quantity </p>
+                                <input type="number" value="1" style="width: 60px; height: 30px;">
+                            </div>
+                            <p class="price">$49.00</p>
+                        </div>
+                    </div>
+                    <div class="object">
+                        <div class="round">
+                            <input type="checkbox" unchecked id="checkbox2" />
+                            <label for="checkbox2"></label>
+                        </div>
+                        <i class="fa fa-trash"></i>
+                    </div>
+                </li>
+                <hr>
+            </ul>
+        </div>
+        <div class="col1">
+            <h1>Payment</h1>
+            <div class="payment">
+                <form name="myForm" action="/mypage/action_page.php" onsubmit="return validateForm()" method="post">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Full Name <span class="red">*</span></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="fullname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="phone">Phone Number <span class="red">*</span></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="address">Address <span class="red">*</span></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="address" name="address" placeholder="Your address..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <select id="method" name="method" style="font-size: 10px;">
+                                <option value="defaultMethod">Payment Methods</option>
+                            </select>
+                        </div>
+                        <div class="col-75">
+                            <label for="COD">Payment on delivery (COD).</label>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="row2">
+                        <div class="col2">
+                            <p>Subtotal</p>
+                            <p>Transport fee</p>
+                        </div>
+                        <div class="col2 col2-right">
+                            <p>$0.00</p>
+                            <p>$0.00</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row2">
+                        <div class="col2">
+                            <p>Estimated Total:</p>
+                        </div>
+                        <div class="col2 col2-right">
+                            <p>$0.00</p>
+                        </div>
+                    </div>
+                    <div class="outer">
+                        <input type="submit" value="CHECK OUT">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- No Data Layout -->
+    <div class="noData" style="display:none">
+        <img src="/img/account&order/ico_nodata_myorder.jpg" style="width:100%;max-width:500px">
+        <p style="font-size: 28px;">Your Cart Is Empty</p>
+        <div class="outer">
+            <div class="button_slide slide_right">
+                CONTINUE SHOPPING
+                <a href="#"><i class="fa fa-fw fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

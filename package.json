@@ -1,6 +1,9 @@
 {
   "name": "webmypham",
   "version": "1.0.0",
+  "nodemonConfig": {
+    "ext": "js,html,handlebars,css,hbs"
+  },
   "description": "",
   "main": "app.js",
   "scripts": {

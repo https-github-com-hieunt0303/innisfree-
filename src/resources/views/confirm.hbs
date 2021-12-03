@@ -1,0 +1,153 @@
+<link rel="stylesheet" href="/css/confirm/base.css">
+<link rel="stylesheet" href="/css/confirm/style.css">
+<link rel="stylesheet" href="/css/confirm/responsive.css">
+<div class="confirm">
+    <div class="grid">
+        <div class="grid-row">
+            <div class="confirm-step">
+                <div class="confirm-step__info active js-step">
+                    <div class="confirm-step__info-item">
+                        <span class="confirm-step__info-item-number">1</span>
+                    </div>
+                    <div class="confirm-step__info-item-content">
+                        <span class="confirm-step__info-item-content-detail">Verify phone number</span>
+                    </div>
+                    <div class="confirm-step__line">
+                    </div>
+                </div>
+
+                <div class="confirm-step__info js-step">
+                    <div class="confirm-step__info-item">
+                        <span class="confirm-step__info-item-number">2</span>
+                    </div>
+                    <div class="confirm-step__info-item-content">
+                        <span class="confirm-step__info-item-content-detail">Create a password</span>
+                    </div>
+                    <div class="confirm-step__line">
+                    </div>
+                </div>
+
+                <div class="confirm-step__info js-step">
+                    <div class="confirm-step__info-item">
+                        <span class="confirm-step__info-item-number">3</span>
+                    </div>
+                    <div class="confirm-step__info-item-content">
+                        <span class="confirm-step__info-item-content-detail">Completed</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="confirm-content">
+                <div class="confirm-content__info">
+                    <div class="confirm-content__code">
+                        <div class="confirm-content__header">
+                            <a href="#" class="confirm-content__back-link">
+                                <i class="confirm-content__header-icon fas fa-arrow-left"></i>
+                            </a>
+                            <h3 class="confirm-content__heading">Enter the confirmation code</h3>
+                        </div>
+                        <span class="confirm-content__code-info">Please enter the verification code sent to phone number
+                            (+84) 0382604120 </span>
+                        <div class="confirm-content__code-square">
+                            <input type="text" class="confirm-content__code-input">
+                            <input type="text" class="confirm-content__code-input">
+                            <input type="text" class="confirm-content__code-input">
+                            <input type="text" class="confirm-content__code-input">
+                            <input type="text" class="confirm-content__code-input">
+                        </div>
+                        <a class="confirm-content__code-btn">
+                            <div href="#" class="confirm-content__code-btn-link js-pass-word">CONFIRM</div>
+                        </a>
+                        <span class="confirm-content__code-msg">You did not receive the code?</span>
+                        <span class="confirm-content__code-resend">Resend or use another verification method</span>
+                    </div>
+                    <div class="confirm-content__password">
+                        <div class="confirm-content__header">
+                            <a href="#" class="confirm-content__back-link js-code">
+                                <i class="confirm-content__header-icon fas fa-arrow-left"></i>
+                            </a>
+                            <h3 class="confirm-content__heading">Create your account’s password</h3>
+                        </div>
+                        <div class="confirm-content__password-info">
+                            <span class="confirm-content__password-heading">Enter password</span>
+                            <input type="text" class="confirm-content__password-input">
+                            <span class="confirm-content__password-constraints">
+                                Enter characters from a-z, numbers from 0-9, do not enter special characters, minimum 6
+                                characters.
+                            </span>
+                        </div>
+                        <div class="confirm-content__password-info">
+                            <span class="confirm-content__password-heading">Re-enter password</span>
+                            <input type="text" class="confirm-content__password-input">
+                        </div>
+                        <a class="confirm-content__code-btn">
+                            <div href="#" class="confirm-content__code-btn-link js-completed">NEXT</div>
+                        </a>
+                    </div>
+                    <div class="confirm-content__completed">
+                        <img src="./assets/img/completed.png" alt="" class="confirm-content__completed-img">
+                        <a class="confirm-content__code-btn">
+                            <div href="#" class="confirm-content__code-btn-link">COMPLETED</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const openCode = document.querySelector('.js-code')
+    const openPassword = document.querySelector('.js-pass-word')
+    const openCompleted = document.querySelector('.js-completed')
+
+    const codeForm = document.querySelector('.confirm-content__code')
+    const passwordForm = document.querySelector('.confirm-content__password')
+    const completedForm = document.querySelector('.confirm-content__completed')
+
+    const steps = document.querySelectorAll('.js-step')
+
+    console.log(steps)
+    function showCodeForm() {
+        codeForm.classList.add('open')
+        codeForm.classList.remove('close')
+        steps.item(0).classList.add('active')
+    }
+    function hideCodeForm() {
+        codeForm.classList.add('close')
+        steps.item(0).classList.remove('active')
+    }
+    function showPasswordForm() {
+        passwordForm.classList.add('open')
+        passwordForm.classList.remove('close')
+        steps.item(1).classList.add('active')
+    }
+    function hidePasswordForm() {
+        passwordForm.classList.add('close')
+        steps.item(1).classList.remove('active')
+    }
+    function showCompletedForm() {
+        completedForm.classList.add('open')
+        steps.item(2).classList.add('active')
+    }
+
+
+    openCode.addEventListener('click', showCodeForm)
+    openCode.addEventListener('click', hidePasswordForm)
+
+    openPassword.addEventListener('click', showPasswordForm)
+    openPassword.addEventListener('click', hideCodeForm)
+
+    openCompleted.addEventListener('click', showCompletedForm)
+    openCompleted.addEventListener('click', hidePasswordForm)
+
+    if (window.location.pathname == "/confirm") {
+        $('#footer').css('display', 'none')
+        $('.header').css('display', 'none')
+    }
+    else {
+        $('#footer').css('display', 'block')
+        $('.header').css('display', 'block')
+    }
+</script>

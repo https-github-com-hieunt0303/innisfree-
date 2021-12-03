@@ -1,0 +1,123 @@
+@media (max-width: 600px){
+    .purchase__heading{
+        font-size: 2.6rem;
+    }
+    .purchase-menu__item{
+        font-size: 1.2rem;
+    }
+    .purchase-info__process-item-circle{
+        width: 40px;
+        height: 40px;
+    }
+    .purchase-info__process-item-circle-icon{
+        font-size: 1.2rem;
+    }
+    .purchase-info__process-item-info{
+        font-size: 1.2rem;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .purchase-info__voucher-Promo-btn,
+    .purchase-info__voucher-Promo-input{
+        font-size: 1.2rem;
+        padding: 8px 8px;
+    }
+    .purchase-info__voucher-Promo-btn{
+        margin-left: 8px;
+    }
+    .purchase-info__payment-item{
+        padding: 8px 0;
+    }
+    .purchase-info__payment-item-info{
+        font-size: 1.2em;
+    }
+    .purchase-info__process-item{
+        margin-bottom: 32px;
+    }
+    .purchase-info__process-item-arrow{
+        height: 32px;
+    }
+}
+@media (max-width: 1023px){
+    /* .body-responsive{
+        width: 100%;
+        flex-direction: column;
+    } */
+    .menu-responsive,
+    .info-responsive{
+        width: 100%;
+    }
+    .purchase-menu{
+        overflow-x: scroll;
+        white-space: nowrap;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    .purchase-menu__list{
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .purchase-menu__link{
+        padding: 0 16px;
+        display: inline-block;
+    }
+    .purchase-menu__item{
+        width: 100%;
+        line-height: 1.4rem;
+        padding: 0;
+        border: none;
+        /* margin-right:48px; */
+    }
+    .purchase-menu__item i{
+        display: none;
+    }
+    .purchase-info__table-info{
+        overflow-x: scroll;
+        white-space: nowrap;
+        -ms-overflow-style: none;
+    }
+    .purchase-menu::-webkit-scrollbar,
+    .purchase-info__table-info::-webkit-scrollbar{
+        display: none;
+    }
+    .purchase-info__table th{
+        font-size: 1.3rem;
+        padding: 10px 16px;
+    }
+    .purchase-info__table td{
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+    .purchase-info__heading{
+        font-size: 2rem;
+    }
+    .purchase-info__title{
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 601px) and (max-width: 1023px){
+    .purchase__heading{
+        font-size: 3rem;
+    }
+    .purchase-menu__item{
+        font-size: 1.4rem;
+    }
+    .purchase-info__process-item-circle{
+        width: 50px;
+        height: 50px;
+    }
+    .purchase-info__process-item-circle-icon{
+        font-size: 1.6rem;
+    }
+    .purchase-info__process-item-info{
+        font-size: 1.4rem;
+    }
+    .purchase-info__voucher-Promo-btn,
+    .purchase-info__voucher-Promo-input{
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+}

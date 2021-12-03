@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="/css/signIn/base.css">
+<link rel="stylesheet" href="/css/signIn/style.css">
+<link rel="stylesheet" href="/css/signIn/responsive.css">
+<script type="module" src="js/signIn/index.js"></script>
+<script type="module" defer src="js/signIn/defer.js"></script>
+<div class="account">
+    <div class="grid-full-width">
+        <div class="account__body-bg">
+            <div class="account__form">
+                <div class="sign-in__form-info">
+                    <h3 class="account__form-name">Sign in</h3>
+                    <input type="phone" class="account__form-input" id="account__form-input-phone" placeholder="Phonenumber">
+                    <input type="password" class="account__form-input" id="account__form-input-pass" placeholder="Password">
+                    <button class="account__form-btn" id="handleAccept">ACCEPT</button>
+                    <a class="account__form-forgot-password">Forgot password?</a>
+                    <div class="account__form-or">
+                        <div class="account__form-or-line"></div>
+                        <span class="account__form-or-info">or</span>
+                        <div class="account__form-or-line"></div>
+                    </div>
+                    <div class="account__form-signin-with">
+                        <div class="account__form-signin-with-social-media">
+                            <i class="account__form-signin-with-icon fab fa-facebook-f"></i>
+                            <span class="account__form-signin-with-name">Sign in with Facebook</span>
+                        </div>
+                        <div class="account__form-signin-with-social-media">
+                            <i class="account__form-signin-with-icon fab fa-google-plus-g"></i>
+                            <span class="account__form-signin-with-name">Sign in with Google</span>
+                        </div>
+                    </div>
+                    <div class="account__form-check-account">
+                        <span class="account__form-check-account-info">You don’t have an account available?</span>
+                        <a class="account__form-check-account-signup-now js-sign-up">Sign up now</a>
+                    </div>
+                </div>
+                <div class="sign-up__form-info">
+                    <h3 class="account__form-name">Sign up</h3>
+                    <input type="text" class="account__form-input" placeholder="Phonenumber">
+                    <button class="account__form-btn js-confirm">NEXT</button>
+                    <div class="account__form-or">
+                        <div class="account__form-or-line"></div>
+                        <span class="account__form-or-info">or</span>
+                        <div class="account__form-or-line"></div>
+                    </div>
+                    <div class="account__form-signin-with">
+                        <div class="account__form-signin-with-social-media">
+                            <i class="account__form-signin-with-icon fab fa-facebook-f"></i>
+                            <span class="account__form-signin-with-name">Sign in with Facebook</span>
+                        </div>
+                        <div class="account__form-signin-with-social-media">
+                            <i class="account__form-signin-with-icon fab fa-google-plus-g"></i>
+                            <span class="account__form-signin-with-name">Sign in with Google</span>
+                        </div>
+                    </div>
+                    <div class="account__form-policy">
+                        <span class="account__form-policy-info">By registering, you agree to Keem's Beauty
+                            about</span>
+                        <span class="account__form-policy-info">
+                            <a href="" class="account__form-policy-info-link">Terms of Service</a>
+                            &
+                            <a href="" class="account__form-policy-info-link">Privacy Policy</a>
+                        </span>
+                    </div>
+                    <div class="account__form-check-account">
+                        <span class="account__form-check-account-info">You have an account available?</span>
+                        <a class="account__form-check-account-signup-now js-sign-in">Sign in now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal__confirm-phone-number ">
+    <div class="confirm__phone-number">
+        <div class="confirm__phone-number-form">
+            <div class="confirm__phone-number-form-header">
+                <h3 class="confirm__phone-number-form-heading">Confirm</h3>
+                <i class="confirm__phone-number-form-icon fas fa-times"></i>
+            </div>
+            <div class="confirm__phone-number-form-body">
+                <div class="confirm__phone-number-form-body-pic">
+                    <img src="/img/signIn/DA-NANG.jpg" alt="" class="confirm__phone-number-form-body-img">
+                </div>
+                <div class="confirm__phone-number-form-body-slide" id="container">
+                    <div class="confirm__phone-number-form-body-square" id="move-arrow">
+                        <i class="confirm__phone-number-form-body-icon fas fa-chevron-right"></i>
+                        <i class="confirm__phone-number-form-body-icon fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <span class="confirm__phone-number-form-body-info">
+                    Click to make a new photo
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

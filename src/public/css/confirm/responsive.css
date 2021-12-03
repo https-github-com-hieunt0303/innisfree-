@@ -1,0 +1,49 @@
+@media (max-width: 600px){
+    .confirm-content__info{
+        min-width: 200px;
+        border-radius: 0;
+    }
+    .confirm-content__code,
+    .confirm-content__password,
+    .confirm-content__completed{
+        padding: 12px 16px;
+    }
+    .confirm-step__info + .confirm-step__info{
+        margin-left: 50px;
+    }
+    .confirm-step__line{
+        display: none;
+    }
+    .confirm-content{
+        width: 100%;
+    }
+    .confirm-content__heading{
+        font-size: 1.7rem;
+    }
+    .confirm-content__code-info,
+    .confirm-content__code-msg,
+    .confirm-content__code-resend{
+        font-size: 1.3rem;
+    }
+    .confirm-content__code-info{
+        margin: 24px 4px 46px 4px;
+    }
+    .confirm-content__code-resend{
+        margin-top: 0;
+    }
+    .confirm-content__code-input{
+        padding: 0 13px;
+        width: 40px;
+        height: 40px;
+    }
+    .confirm-step__info{
+        display: none;
+    }
+    .confirm-step__info.active{
+        display: flex;
+        margin-left: 0;
+    }
+}
+@media (min-width: 601px) and (max-width: 1023px){
+
+}

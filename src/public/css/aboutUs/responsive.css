@@ -1,0 +1,54 @@
+@media (max-width: 600px){
+    .about-us__heading{
+        font-size: 2.4rem;
+    }
+    .about-us-info{
+        grid-template-columns: auto;
+        margin-top: 16px;
+    }
+    .about-us-info__detail{
+        margin-top: 16px;
+    }
+    .about-us-info__heading{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        margin: 0 0 24px
+    }
+    .about-us-info__discription,
+    .about-us-info__addition-info{
+        font-size: 1.2rem;
+        line-height: 2.8rem;
+        margin: 16px 0;
+    }
+    .about-us-info__ingredients-create-with-heading th{
+        font-size: 1.4rem;
+    }
+    .about-us-info__ingredients-create-with-discpt td{
+        font-size: 1.2rem;
+        line-height: 2.8rem;
+    }
+
+}
+@media (min-width: 601px) and (max-width: 1023px){
+
+}
+@media (max-width: 1023px){
+    .about-us-info__heading{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        margin: 0 0 24px
+    }
+    .about-us-info__discription,
+    .about-us-info__addition-info{
+        font-size: 1.2rem;
+        line-height: 2.8rem;
+        margin: 16px 0;
+    }
+    .about-us-info__ingredients-create-with-heading th{
+        font-size: 1.4rem;
+    }
+    .about-us-info__ingredients-create-with-discpt td{
+        font-size: 1.2rem;
+        line-height: 2.8rem;
+    }
+}

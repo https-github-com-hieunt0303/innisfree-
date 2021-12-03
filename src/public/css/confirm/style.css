@@ -1,0 +1,220 @@
+
+.confirm-step{
+    width: 100%;
+    margin: 48px 0;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.confirm-step__info{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.confirm-step__info + .confirm-step__info{
+    margin-left: 100px;
+}
+.confirm-step__info-item{
+    padding: 16px 20px 15px 20px;
+    border: 1px solid #C4C4C4;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    line-height: 0;
+    color: #C4C4C4;
+}
+.confirm-step__info.active .confirm-step__info-item{
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.confirm-step__info-item-number{
+    font-size: 1.8rem;
+    /* color: #C4C4C4; */
+    line-height: 1.8rem;
+    font-weight: 600;
+}
+/* .confirm-step__info-item-number.active{
+    color: var(--white-color);
+} */
+.confirm-step__info-item-content{
+    margin-top: 16px;
+    color: #C4C4C4;
+}
+.confirm-step__info-item-content-detail{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+.confirm-step__info.active .confirm-step__info-item-content{
+    color: var(--primary-color);
+}
+.confirm-step__line{
+    position: absolute;
+    content: '';
+    top: 30%; 
+    left: 100%;
+    width: 100px;
+    height: 1px;
+    background-color: var(--primary-color);
+}
+/* Content */
+.confirm-content{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+
+}
+.confirm-content__info{
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-width: 534px;
+}
+.confirm-content__code{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 48px;
+}
+.confirm-content__code.open{
+    display: flex;
+}
+.confirm-content__code.close{
+    display: none;
+}
+.confirm-content__header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.confirm-content__back-link{
+    text-decoration: none;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.confirm-content__header-icon{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+.confirm-content__heading{
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.confirm-content__code-info{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin: 32px 16px 58px 16px;
+    text-align: center;
+}
+.confirm-content__code-square{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.confirm-content__code-input{
+    font-size: 1.6rem;
+    padding: 0 19px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    outline: none;
+}
+.confirm-content__code-input + .confirm-content__code-input{
+    margin-left: 24px;
+}
+.confirm-content__code-btn{
+    width: 100%;
+    margin-top: 48px;
+}
+.confirm-content__code-btn-link{
+    padding: 10px;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 25px;
+    cursor: pointer;
+    color: var(--white-color);
+}
+.confirm-content__code-msg{
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 24px;
+}
+.confirm-content__code-resend{
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+
+
+/* Password */
+.confirm-content__password{
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 48px;
+}
+
+.confirm-content__password.open{
+    display: flex;
+}
+.confirm-content__password.close{
+    display: none;
+}
+.confirm-content__password-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 32px;
+}
+.confirm-content__password-heading{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+.confirm-content__password-input{
+    font-size: 1.4rem;
+    padding: 8px 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+}
+.confirm-content__password-constraints{
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+/* Completed */
+.confirm-content__completed{
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 48px;
+}
+.confirm-content__completed.open{
+    display: flex;
+}
+.confirm-content__completed.close{
+    display: none;
+}

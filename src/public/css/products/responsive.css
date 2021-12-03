@@ -1,0 +1,116 @@
+/* Mobile */
+@media (max-width: 600px){
+    .products-filter__search-input{
+        padding: 8px 16px;
+    }
+    .products-filter__search-btn{
+        width: 60px;
+    }
+    .products-filter__search-icon{
+        font-size: 1.2rem;
+    }
+    .category-name{
+        font-size: 2rem;
+        margin: 32px 0 16px 16px;
+    }
+    .btn_buy-now{
+        font-size: 1.2rem;
+        padding: 6px 10px;
+    }
+    .products-container-item-heart{
+        width: 25px;
+        height: 25px;
+        top: 6px;
+        left: 6px;
+    }
+    .product-name{
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-align: left;
+        margin: 0 0 16px 0;
+        line-height: 1.8rem;
+
+    }
+    .products-container-row{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .product-review{
+        margin-top: 48px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .product-review-img{
+        width: 70px;
+        margin: 0 0 16px 0;
+    }
+    .product-review-number{
+        font-size: 1.2rem;
+    }
+    .product-price{
+        text-align: start;
+        font-size: 1.6rem;
+    }
+    .product-option-info-name{
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+    .product-option-info-icon{
+        font-size: 1rem;
+    }
+    .product-option-info-item{
+        font-size: 1.2rem;
+    }
+}
+/* Mobile + Tablet */
+@media (max-width: 1023px){
+    .category,
+    .category-promote{
+        display: none;
+    }
+    .grid-col-7{
+        width: 100%;
+    }
+    .product-heading__label{
+        font-size: 1.2rem;
+    }
+    .product-search{
+        width: 100%;
+        display: inline-block;
+        padding: 0 12px;
+    }
+    .products-filter{
+        padding: 0 16px;
+        margin: 0 0 16px 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .btn_buy-now{
+        font-size: 1.4rem;
+        padding: 12px 14px;
+    }
+    .product-review{
+        margin-top: 32px;
+    }
+    .product-review-img{
+        width: 80px;
+        margin-right: 8px;
+    }
+    .product-review-number{
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 601px) and (max-width: 767px){
+    .product-review{
+        margin-top: 36px;
+        justify-content: space-around;
+    }
+    .product-review-img{
+        width: 70px;
+        margin-top: -1px;
+        margin-right: 8px;
+    }
+    .product-review-number{
+        font-size: 1.2rem;
+    }
+}

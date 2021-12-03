@@ -1,0 +1,267 @@
+<link rel="stylesheet" href="/css/account&order/style.css">
+<link rel="stylesheet" href="/css/account&order/base.css">
+<p style="font-family: Montserrat; font-size: 24px; color: #336E51; text-align: center;">My Account</p>
+<div class="mypageWrap">
+    <aside class="mypageCateArea">
+        <div class="lnbTop">
+            <a id="_cate_main" class="on" href="#">Information management</a>
+            <a id="_cate_order" href="/mypage/myorder.html">Order Management </a>
+            <a id="_cate_favorite" href="/mypage/myaddress">Manage favorite products </a>
+            <a id="_cate_sign_out" href="/mypage/mypoint">Sign out</a>
+        </div>
+    </aside>
+    <div class="mypageArea">
+        <div class="section01">
+            <h1>Update your account information</h1>
+            <form name="myForm" action="/mypage/action_page.php" onsubmit="return validateForm()" method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nickname">Nickname </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nickname" name="nickname" placeholder="Keem Liennn">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phone">Phone Number <span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phone" name="phone" placeholder="0382604120">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="password">Password <span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" id="password" name="password" placeholder="************">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="truonglien01102001@gmail.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="address">
+                            <Address></Address> Address
+                        </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="address" name="address"
+                            placeholder="Đường 01, Tổ 01, kp. Ông Đông, p. Tân Hiệp, tx. Tân Uyên, tỉnh Bình Dương">
+                    </div>
+                </div>
+                <div class="outer" style="margin: 30px 0;">
+                    <input type="submit" value="SAVE">
+                </div>
+            </form>
+        </div>
+        <hr size="1px" color="#000">
+        <div class="section02">
+            <h1>Information of your order</h1>
+            <div class="row orderStatus" style="background-color: #F9F9F9;">
+                <div class="col-25">
+                    <br>
+                    <h2 style="display: inline;">Order Status</h2>
+                </div>
+                <div class="col-75 radioCheck" style="display: inline; margin-right: 0;">
+                    <label class="radio">
+                        <input type="radio" name="r" value="1" checked>
+                        <span>All single orders</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="r" value="2">
+                        <span>Orders have been delivered successfully</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="r" value="3">
+                        <span>Orders are being delivered</span>
+                    </label>
+                </div>
+            </div>
+            <table id="orders">
+                <tr>
+                    <th>Oders code</th>
+                    <th>Product's name</th>
+                    <th>Quantity</th>
+                    <th>Amount paid</th>
+                    <th>Order date</th>
+                    <th>Order status</th>
+                </tr>
+                <tr class="orderItems">
+                    <td>OD9988</td>
+                    <td>Bakuchiol Retinol Alternative Smoothing Serum</td>
+                    <td>1</td>
+                    <td>54$</td>
+                    <td>October 15, 2021 </td>
+                    <td>Delivering</td>
+                </tr>
+                <tr class="orderItems">
+                    <td>OD0794</td>
+                    <td>Brighten Pineapple + Gemstone Mask</td>
+                    <td>2</td>
+                    <td>98$</td>
+                    <td>August 25, 2021 </td>
+                    <td>Delivered</td>
+                </tr>
+                <tr class="orderItems">
+                    <td>OD0127</td>
+                    <td>Coconut Milk Bath Soak</td>
+                    <td>1</td>
+                    <td>88$</td>
+                    <td>April 12, 2021 </td>
+                    <td>Delivered</td>
+                </tr>
+            </table>
+        </div>
+        <hr size="1px" color="#000">
+        <div class="section03">
+            <h1>Your favorite products</h1>
+            <div class="products-container">
+                <div class="grid-row products-container-row">
+                    <div class="grid-col-7-3">
+                        <div class="products-container-item">
+                            <div class="products-container-item__pic">
+                                <img src="/img/account&order/Herbivore_Bakuchiol_Serum_Ecomm.jpg" alt=""
+                                    class="products-container-item-img">
+                                <img src="/img/account&order/Heart.png" alt="Heart" class="products-container-item-heart">
+                            </div>
+
+                            <div class="products-container-item__info">
+                                <div class="product-name-box">
+                                    <h4 class="product-name">Bakuchiol Retinol Alternative Smoothing Serum</h4>
+                                </div>
+                                <div class="product-review">
+                                    <img src="/img/account&order/Star.png" alt="" class="product-review-img">
+                                    <span class="product-review-number">132 Reviews</span>
+                                </div>
+                                <p class="product-price">$54.00</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_buy-now">BUY NOW</button>
+                    </div>
+
+                    <div class="grid-col-7-3">
+                        <div class="products-container-item">
+                            <div class="products-container-item__pic">
+                                <img src="/img/account&order/Coco_Rose_Lip_Conditioner.jpg" alt=""
+                                    class="products-container-item-img">
+                                <img src="/img/account&order/Heart.png" alt="Heart" class="products-container-item-heart">
+                            </div>
+
+                            <div class="products-container-item__info">
+                                <div class="product-name-box">
+                                    <h4 class="product-name">Coco Rose Lip Conditioner</h4>
+                                </div>
+                                <div class="product-review">
+                                    <img src="/img/account&order/Star.png" alt="" class="product-review-img">
+                                    <span class="product-review-number">132 Reviews</span>
+                                </div>
+                                <p class="product-price">$9.60</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_buy-now">BUY NOW</button>
+                    </div>
+
+                    <div class="grid-col-7-3">
+                        <div class="products-container-item">
+                            <div class="products-container-item__pic">
+                                <img src="/img/account&order/Herbivore_Prism_12AHA_Exfoliating_FaceSerum_Ecomm.jpg" alt=""
+                                    class="products-container-item-img">
+                                <img src="/img/account&order/Heart.png" alt="Heart" class="products-container-item-heart">
+                            </div>
+
+                            <div class="products-container-item__info">
+                                <div class="product-name-box">
+                                    <h4 class="product-name">PRISM AHA + BHA Exfoliating Glow Serum
+                                    </h4>
+                                </div>
+
+                                <div class="product-review">
+                                    <img src="/img/account&order/Star.png" alt="" class="product-review-img">
+                                    <span class="product-review-number">132 Reviews</span>
+                                </div>
+                                <p class="product-price">$54.00</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_buy-now">BUY NOW</button>
+                    </div>
+                </div>
+
+                <div class="grid-row products-container-row">
+                    <div class="grid-col-7-3">
+                        <div class="products-container-item">
+                            <div class="products-container-item__pic">
+                                <img src="/img/account&order/Herbivore_Phoenix_Antiaging_FaceOil_Ecomm.jpg" alt=""
+                                    class="products-container-item-img">
+                                <img src="/img/account&order/Heart.png" alt="Heart" class="products-container-item-heart">
+                            </div>
+
+                            <div class="products-container-item__info">
+                                <div class="product-name-box">
+                                    <h4 class="product-name">Phoenix Rosehip Anti Aging Face Oil - For Dry Skin</h4>
+                                </div>
+                                <div class="product-review">
+                                    <img src="/img/account&order/Star.png" alt="" class="product-review-img">
+                                    <span class="product-review-number">220 Reviews</span>
+                                </div>
+                                <p class="product-price">$54.00</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_buy-now">BUY NOW</button>
+                    </div>
+
+                    <div class="grid-col-7-3">
+                        <div class="products-container-item">
+                            <div class="products-container-item__pic">
+                                <img src="/img/account&order/Herbivore_Lapis_BlueTansy_FaceOil_Ecomm.jpg" alt=""
+                                    class="products-container-item-img">
+                                <img src="/img/account&order/Heart.png" alt="Heart" class="products-container-item-heart">
+                            </div>
+
+                            <div class="products-container-item__info">
+                                <div class="product-name-box">
+                                    <h4 class="product-name">Phoenix Rosehip Anti Aging Face Oil - For Dry Skin</h4>
+                                </div>
+                                <div class="product-review">
+                                    <img src="/img/account&order/Star.png" alt="" class="product-review-img">
+                                    <span class="product-review-number">220 Reviews</span>
+                                </div>
+                                <p class="product-price">$54.00</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_buy-now">BUY NOW</button>
+                    </div>
+
+                    <div class="grid-col-7-3">
+                        <div class="products-container-item">
+                            <div class="products-container-item__pic">
+                                <img src="/img/account&order/Herbivore_Orchid_Antioxidant_FaceOil_Ecomm.jpg" alt=""
+                                    class="products-container-item-img">
+                                <img src="/img/account&order/Heart.png" alt="Heart" class="products-container-item-heart">
+                            </div>
+
+                            <div class="products-container-item__info">
+                                <div class="product-name-box">
+                                    <h4 class="product-name">Phoenix Rosehip Anti Aging Face Oil - For Dry Skin</h4>
+                                </div>
+                                <div class="product-review">
+                                    <img src="/img/account&order/Star.png" alt="" class="product-review-img">
+                                    <span class="product-review-number">220 Reviews</span>
+                                </div>
+                                <p class="product-price">$54.00</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_buy-now">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+
+.about-us__header{
+    width: 100%;
+}
+.about-us__heading{
+    font-size: 3.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 48px 0 16px;
+    text-align: center;
+    color: var(--primary-color);
+}
+.about-us-info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 48px;
+}
+.about-us-pic{
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.about-us-pic__img{
+    width: 100%;
+    border-radius: 3px;
+    object-fit: contain;
+}
+.about-us-info__detail{
+    margin: auto 0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.about-us-info__heading{
+    font-size: 2.4rem;
+    color: var(--black-color);
+    line-height: 3.5rem;
+    font-weight: 800;
+    margin: 0 0 48px;
+}
+.about-us-info__discription{
+    font-size: 1.6rem;
+    line-height: 4.5rem;
+    color: var(--sub-text-color);
+}
+.about-us-info__addition{
+    margin-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.about-us-info__addition-info{
+    font-size: 1.6rem;
+    line-height: 4.5rem;
+    color: var(--black-color);
+}
+.about-us-info__ingredients{
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 32px 0;
+}
+.about-us-info__ingredients-create-with{
+    border-collapse: collapse;
+}
+.about-us-info__ingredients-create-with-heading th{
+    width: 50%;
+    padding: 8px 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 1px solid var(--black-color);
+}
+.about-us-info__ingredients-create-with-discpt td{
+    border: 1px solid var(--black-color);
+    padding: 8px 8px;
+    font-size: 1.6rem;
+    line-height: 4.5rem;
+}
