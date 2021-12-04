@@ -1,4 +1,4 @@
-import {showLoading} from'/js/main.js';
+import { showLoading } from '/js/main.js';
 $(document).ready(function () {
 
     // slide
@@ -148,34 +148,32 @@ $(document).ready(function () {
             $('#view-more-product-btn').html('View more →')
         }
     }
-    $('.btn.view-detail__btn.about-us').on('click',function(){
-        let check = $('.about__info-detail.close').css('display')
-        if(check =='none'){
-            $('.about__info-detail.close').css('display','block')
-            $('.btn.view-detail__btn.about-us').html('View smaller →')
-        }
-        else if(check =='block'){
-            $('.about__info-detail.close').css('display','none')
-            $('.btn.view-detail__btn.about-us').html('View detail →')
-        }
+    $('.btn.view-detail__btn.about-us').on('click', function () {
+        showLoading('/aboutUs')
     })
-    $('.products-container-item-img').on('click',function(){
+    $('.products-container-item-img').on('click', function () {
         showLoading('/detailProduct')
     })
 
     // icon heard
-    $('.products-container-item-heart').on('click',function(){
+    $('.products-container-item-heart').on('click', function () {
         let index = $('.products-container-item-heart').index(this)
         let checkActive = $('.products-container-item-heart').eq(index).hasClass('active')
         // đỏi icon rỗng
-        if(!checkActive){
+        if (!checkActive) {
             $('.products-container-item-heart').eq(index).addClass('active')
-            $('.products-container-item-heart').eq(index).attr('src','img/account&order/Heart.png')
+            $('.products-container-item-heart').eq(index).attr('src', 'img/account&order/Heart.png')
         }
-        else{
+        else {
             $('.products-container-item-heart').eq(index).removeClass('active')
-            $('.products-container-item-heart').eq(index).attr('src','/img/home/Heart.png')
+            $('.products-container-item-heart').eq(index).attr('src', '/img/home/Heart.png')
         }
-        console.log(index,checkActive)
+        console.log(index, checkActive)
+    })
+    $('.view-detail-information').on('click', function () {
+        let index = $('.view-detail-information').index(this)
+        let textDetail = $('.header-purchase').eq(index).html()
+        
+        showLoading(`/purchase?text=${index}`)
     })
 });
