@@ -1,4 +1,4 @@
-<script src="/js/home/index.js"></script>
+<script type="module" src="/js/home/index.js"></script>
 <link rel="stylesheet" href="/css/home/base.css">
 <link rel="stylesheet" href="/css/home/style.css">
 <link rel="stylesheet" href="/css/home/styleslide.css">
@@ -163,7 +163,7 @@
     </div>
     <div class="product__detail" id="container-product-example">
       <div class="product__arrow">
-        <i class="product__icon-arrow-left fas fa-chevron-left"></i>
+        {{!-- <i class="product__icon-arrow-left fas fa-chevron-left"></i> --}}
       </div>
       <div class="product__item">
         <div class="products-container-item">
@@ -184,7 +184,7 @@
             <p class="product-price">$54.00</p>
           </div>
         </div>
-        <button class="btn btn_buy-now" >BUY NOW</button>
+        <button class="btn btn_buy-now">BUY NOW</button>
       </div>
       <div class="product__item">
         <div class="products-container-item">
@@ -204,7 +204,7 @@
             <p class="product-price">$54.00</p>
           </div>
         </div>
-        <button class="btn btn_buy-now" >BUY NOW</button>
+        <button class="btn btn_buy-now">BUY NOW</button>
       </div>
       <div class="product__item">
         <div class="products-container-item">
@@ -225,10 +225,10 @@
             <p class="product-price">$54.00</p>
           </div>
         </div>
-        <button class="btn btn_buy-now" >BUY NOW</button>
+        <button class="btn btn_buy-now">BUY NOW</button>
       </div>
       <div class="product__arrow">
-        <i class="product__icon-arrow-right fas fa-chevron-right"></i>
+        {{!-- <i class="product__icon-arrow-right fas fa-chevron-right"></i> --}}
       </div>
     </div>
     <div id="add-container-product">
@@ -249,7 +249,7 @@
     </div>
     <div class="product__detail">
       <div class="product__arrow">
-        <i class="product__icon-arrow-left fas fa-chevron-left"></i>
+        {{!-- <i class="product__icon-arrow-left fas fa-chevron-left"></i> --}}
       </div>
       <div class="product__item">
         <div class="products-container-item">
@@ -314,70 +314,8 @@
         </div>
         <button class="btn btn_buy-now">BUY NOW</button>
       </div>
-      <div class="product__item close">
-        <div class="products-container-item">
-          <div class="products-container-item__pic">
-            <img src="/img/home/Herbivore_BlueTansy_Pores_FaceMask_Ecomm.jpg" alt=""
-              class="products-container-item-img">
-            <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
-          </div>
-
-          <div class="products-container-item__info">
-            <div class="product-name-box">
-              <h4 class="product-name">Blue Tansy Invisible Pores Resurfacing Clarity Mask</h4>
-            </div>
-            <div class="product-review">
-              <img src="/img/home/Star.png" alt="" class="product-review-img">
-              <span class="product-review-number">220 Reviews</span>
-            </div>
-            <p class="product-price">$54.00</p>
-          </div>
-        </div>
-        <button class="btn btn_buy-now">BUY NOW</button>
-      </div>
-      <div class="product__item close">
-        <div class="products-container-item">
-          <div class="products-container-item__pic">
-            <img src="/img/home/Herbivore_Brighten_Enzyme_FaceMask_Ecomm.jpg" alt=""
-              class="products-container-item-img">
-            <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
-          </div>
-
-          <div class="products-container-item__info">
-            <div class="product-name-box">
-              <h4 class="product-name">Brighten Pineapple + Gemstone Mask</h4>
-            </div>
-            <div class="product-review">
-              <img src="/img/home/Star.png" alt="" class="product-review-img">
-              <span class="product-review-number">220 Reviews</span>
-            </div>
-            <p class="product-price">$54.00</p>
-          </div>
-        </div>
-        <button class="btn btn_buy-now">BUY NOW</button>
-      </div>
-      <div class="product__item close">
-        <div class="products-container-item">
-          <div class="products-container-item__pic">
-            <img src="/img/home/Herbivore_CocoRose_BodyScrub_Ecomm.jpg" alt="" class="products-container-item-img">
-            <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
-          </div>
-
-          <div class="products-container-item__info">
-            <div class="product-name-box">
-              <h4 class="product-name">Coco Rose Exfoliating Body Scrub</h4>
-            </div>
-            <div class="product-review">
-              <img src="/img/home/Star.png" alt="" class="product-review-img">
-              <span class="product-review-number">220 Reviews</span>
-            </div>
-            <p class="product-price">$54.00</p>
-          </div>
-        </div>
-        <button class="btn btn_buy-now">BUY NOW</button>
-      </div>
       <div class="product__arrow">
-        <i class="product__icon-arrow-right fas fa-chevron-right"></i>
+        {{!-- <i class="product__icon-arrow-right fas fa-chevron-right"></i> --}}
       </div>
     </div>
     <div class="view-detail">
@@ -407,8 +345,14 @@
       necessary. We are always free of synthetic ingredients, including dyes, fragrances, and parabens. By formulating
       without synthetic ingredients, we strive to create products to be as biocompatible as possible.
     </p>
+    <p class="about__info-detail close">
+      Knowing that everything we put on our skin quickly absorbs into our bodies, we ethically source the finest raw
+      natural materials the earth has to offer. With ingredients ranging from French pink clay to Brazilian gemstones,
+      we formulate treatments that combine essential vitamins, minerals, and botanicals to restore skin to its optimum
+      health and vitality.
+    </p>
     <div class="view-detail">
-      <button class="btn view-detail__btn">
+      <button class="btn view-detail__btn about-us">
         View detail
         <i class="fas fa-arrow-right"></i>
       </button>

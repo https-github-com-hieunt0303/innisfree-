@@ -5,7 +5,37 @@ window.onload = function () {
         function () {
             randomTextHeader()
         }
-        , 1500)
+        , 4500)
+    const currentPath = window.location.pathname 
+    setActiveMenuPage(currentPath)
+}
+function setActiveMenuPage(currentPath){
+    let arrNameMenu = $('.container-page-url').eq(1).html()
+    let activeMenu 
+    switch(currentPath){
+        case '/detailProduct':{
+            activeMenu = 2
+            break
+        }
+        case '/':{
+            activeMenu = 1
+            break
+        }
+        case '/purchase':{
+            activeMenu = 3
+            break
+        }
+        case '/aboutUs':{
+            activeMenu = 4
+            break
+        }
+        default:{
+            activeMenu=2
+        }
+    }
+    console.log(activeMenu,currentPath)
+    $('.expand.container-page-url').removeClass('active')
+    $('.expand.container-page-url').eq(activeMenu-1).addClass('active')
 }
 function randomTextHeader() {
     let number = Math.floor(Math.random() * 3);

@@ -1,3 +1,4 @@
+import {showLoading} from'/js/main.js';
 $(document).ready(function () {
 
     // slide
@@ -147,4 +148,34 @@ $(document).ready(function () {
             $('#view-more-product-btn').html('View more →')
         }
     }
+    $('.btn.view-detail__btn.about-us').on('click',function(){
+        let check = $('.about__info-detail.close').css('display')
+        if(check =='none'){
+            $('.about__info-detail.close').css('display','block')
+            $('.btn.view-detail__btn.about-us').html('View smaller →')
+        }
+        else if(check =='block'){
+            $('.about__info-detail.close').css('display','none')
+            $('.btn.view-detail__btn.about-us').html('View detail →')
+        }
+    })
+    $('.products-container-item-img').on('click',function(){
+        showLoading('/detailProduct')
+    })
+
+    // icon heard
+    $('.products-container-item-heart').on('click',function(){
+        let index = $('.products-container-item-heart').index(this)
+        let checkActive = $('.products-container-item-heart').eq(index).hasClass('active')
+        // đỏi icon rỗng
+        if(!checkActive){
+            $('.products-container-item-heart').eq(index).addClass('active')
+            $('.products-container-item-heart').eq(index).attr('src','img/account&order/Heart.png')
+        }
+        else{
+            $('.products-container-item-heart').eq(index).removeClass('active')
+            $('.products-container-item-heart').eq(index).attr('src','/img/home/Heart.png')
+        }
+        console.log(index,checkActive)
+    })
 });

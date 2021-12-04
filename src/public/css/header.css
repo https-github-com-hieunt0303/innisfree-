@@ -3,10 +3,11 @@
     z-index: 1000;
 }
 #notify-header {
+    font-size: 12px;
     opacity: 1;
-    animation: mymove 2s infinite;
+    animation: mymove 5s infinite;
     position: relative;
-    animation-delay: 1.5s;
+    animation-delay: 5s;
 }
 
 @keyframes mymove {
@@ -37,8 +38,8 @@
 }
 
 .header-icon {
-    width: 15px;
-    height: 15px;
+    font-size: 15px;
+    padding-top: 2px;
 }
 
 .header-info p {
@@ -117,6 +118,7 @@ ul {
 /* footer */
 
 #footer {
+    font-size: 3vmin;
     background-color: #336D51;
     padding: 10px 30px 10px 30px;
     color: white;

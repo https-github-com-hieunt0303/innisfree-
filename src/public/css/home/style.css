@@ -337,6 +337,9 @@
     text-align: center;
     margin-bottom: 32px;
 }
+.about__info-detail.close{
+    display: none;
+}
 .view-detail{
     text-align: center;
 }
