@@ -66,7 +66,7 @@
 ul {
     list-style-type: none;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     vertical-align: middle;
 }
 
@@ -118,10 +118,11 @@ ul {
 /* footer */
 
 #footer {
-    font-size: 3vmin;
+    /* font-size: 3vmin; */
     background-color: #336D51;
-    padding: 10px 30px 10px 30px;
+    padding: 32px 100px;
     color: white;
+    font-family: 'Poppins', sans-serif;
     
 }
 
@@ -132,18 +133,30 @@ ul {
 
 .footer-table li {
     margin: 0;
-    padding: 0;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer-table li:first-child{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
 }
 
 #footer-followus li:not(li:nth-child(1)) {
     float: left;
-    margin-right: 10px;
-    margin-top: 10px;
 }
-
-.footer-icon {
-    width: 20px;
-    height: 20px;
+.footer-icon i{
+    font-size:24px;
+}
+.footer-icon + .footer-icon{
+    margin-left: 16px;
+}
+#footer-ending{
+    font-size: 14px;
+}
+#footer-ending h4{
+    margin: 0 4px 0 0 ;
 }
 
 /* overlay cart */
