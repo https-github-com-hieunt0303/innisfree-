@@ -8,6 +8,7 @@
     animation: mymove 5s infinite;
     position: relative;
     animation-delay: 5s;
+    margin-left: 32px;
 }
 
 @keyframes mymove {
@@ -21,15 +22,14 @@
 .header-top {
     background-color: #336D51;
     color: white;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    height: 40px;
 }
 
-.header-top p {
+/* .header-top p {
     padding-left: 30px;
     margin: 0;
     width: max-content;
-}
+} */
 
 #avatar-user {
     border-radius: 50%;
@@ -42,19 +42,69 @@
     padding-top: 2px;
 }
 
-.header-info p {
-    padding: 0;
-    margin: 0;
+.header-info{
+    display: flex;
+    justify-content: end;
+    margin-right: 24px;
 }
-
+.header-info-order,
+.header-info-account{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-info-account:hover .header-info-nav{
+    display: block;
+}
 .header-info-item {
     cursor: pointer;
-    float: right;
-    position: relative;
     margin-right: 10px;
-    right: 30px
 }
-
+.header-info-nav{
+    position: absolute;
+    top: calc(100% - 4px);
+    left: -100%;
+    right: 0;
+    min-width: 200px;
+    background-color: #fff;
+    z-index: 1;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header-info-list{
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    padding: 16px 0 0;
+}
+.header-info-list-item:first-child h3{
+    margin: 0;
+    font-size: 16px;
+    color: #3F3F3F;
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
+.header-info-list-item{
+    display: flex;
+}
+.header-info-link{
+    width: 100%;
+    text-decoration: none;
+    font-size: 12px;
+    color: #787878;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+.header-info-link i{
+    margin-right: 8px;
+}
+.header-info-order p{
+    margin: 0;
+}
+.header-info-link:hover{
+    color: #fff;
+    background-color: #336D51;
+}
 .grid-header {
     display: grid;
     grid-template-columns: 50% 50%;
