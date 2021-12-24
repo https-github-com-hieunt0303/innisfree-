@@ -93,7 +93,7 @@ function dragElement(elmnt) {
                 e.stopPropagation()
 
                 //window.location.reload();
-                showLoading('/')
+                showLoading('/confirm')
             }
         }
 

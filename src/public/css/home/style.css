@@ -1,6 +1,7 @@
 
 /* Header */
 .home__header{
+    margin-top: 40px;
     display: flex;
     height: 727px;
     position: relative;
@@ -258,6 +259,9 @@
     border-radius: 10px;
 }
 .products-container-item-heart{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
     position: absolute;
     top: 16px;
     left: 16px;

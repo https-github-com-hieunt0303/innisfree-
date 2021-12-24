@@ -87,9 +87,9 @@
                         </a>
                     </div>
                     <div class="confirm-content__completed">
-                        <img src="./assets/img/completed.png" alt="" class="confirm-content__completed-img">
-                        <a class="confirm-content__code-btn">
-                            <div href="#" class="confirm-content__code-btn-link">COMPLETED</div>
+                        <img src="/img/confirm/completed.png" alt="" class="confirm-content__completed-img">
+                        <a class="confirm-content__code-btn"  onclick="handleCompleted()">
+                            <div  class="confirm-content__code-btn-link">COMPLETED</div>
                         </a>
                     </div>
                 </div>
@@ -98,6 +98,11 @@
     </div>
 </div>
 <script>
+    function handleCompleted() {
+        console.log(13)
+        localStorage.setItem('data-login', '123456');
+        window.location.href = '/';
+    }
     const openCode = document.querySelector('.js-code')
     const openPassword = document.querySelector('.js-pass-word')
     const openCompleted = document.querySelector('.js-completed')

@@ -43,7 +43,7 @@
 }
 
 .header-info{
-    display: flex;
+    /* display: flex; */
     justify-content: end;
     margin-right: 24px;
 }
@@ -106,9 +106,9 @@
     background-color: #336D51;
 }
 .grid-header {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    
+    display: flex;
+    justify-content: space-between;
 }
 
 /* header menu */

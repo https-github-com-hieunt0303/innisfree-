@@ -6,7 +6,10 @@
             <div>
                 <p id="notify-header">[Deal] Free $10 gift when buying combo of innisfree product</p>
             </div>
-            <div class="header-info">
+            <div class="header-info not-login">
+                <a href="/signIn" class="header-info-item account" style="margin-top: 10px;font-size:12px;color:white">Sign in/ Sign up</a>
+            </div>
+            <div class="header-info login">
                 <div class="header-info-account">
                     <img class="header-info-item" src="./img/avatar.png" alt="" id="avatar-user">
                     <b class="header-info-item account">Hieu Nguyen</b>
@@ -246,5 +249,13 @@
     }
     else{
         $('.header').css('display','block')
+    }
+    if(localStorage.getItem('data-login') == null){
+        $('.header-info.login').css('display','none')
+        $('.header-info.not-login').css('display','block')
+    }
+    else{
+        $('.header-info.login').css('display','flex')
+        $('.header-info.not-login').css('display','none')
     }
 </script>
