@@ -29,6 +29,9 @@ class homeControllers {
     signIn(req, res) {
         res.render('signIn')
     }
+    productAll(req, res) {
+        res.render('productAll')
+    }
 }
 
 module.exports = new homeControllers()

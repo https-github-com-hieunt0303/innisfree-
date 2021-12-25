@@ -5,9 +5,14 @@ window.onload = function () {
         function () {
             randomTextHeader()
         }
-        , 4500)
+        , 4000)
     const currentPath = window.location.pathname
     setActiveMenuPage(currentPath)
+
+    document.getElementsByClassName('header-menu-right-icon search')[0].addEventListener('click', function () {
+        showLoading('products') 
+    })
+
 }
 
 //your code here
@@ -31,7 +36,6 @@ else {
     document.getElementsByClassName('header-info not-login')[0].style.display = "none"
     // $('.header-info.not-login').css('display', 'none')
 }
-
 
 function setActiveMenuPage(currentPath) {
 
