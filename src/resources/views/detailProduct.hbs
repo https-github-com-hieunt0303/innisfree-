@@ -1,6 +1,8 @@
 <script src="/js/detailProduct/script.js"></script>
 <link rel="stylesheet" href="/css/detailProduct/style.css">
 <link rel="stylesheet" href="/css/detailProduct/responsive.css">
+<link rel="stylesheet" href="/src/public/fontawesome-free-5.15.3-web/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Satisfy&display=swap" rel="stylesheet">
 <!-- thanh anchor top  -->
 <div id="container-anchor-top">
     <a href="#top-page" id="anchor-top">
@@ -35,9 +37,8 @@
     </div>
     <div class="dp-grid-right-info">
         <div>
-            <p class="dp-titleProduct">Bakuciol Retinol Alternative</p>
-            <p id="detail-header-information-header-product">Smoothing Serum</p>
-            <p id="detail-information-header-product">Bakuchiol Serum is a naturally derived retinol-alternative
+            <h2 class="dp-titleProduct">Bakuciol Retinol Alternative Smoothing Serum</h2>
+            <p class="product-info-detail" id="detail-information-header-product">Bakuchiol Serum is a naturally derived retinol-alternative
                 serum to help
                 smooth the appearance of fine lines and wrinkles while sealing in
                 hydration. Bakuchiol, the key ingredient, is sourced sustainably from the
@@ -59,7 +60,9 @@
             <p class="dp-price">$50.00</p>
         </div>
         <div class="dp-star-reviews">
-            <div>
+            <img src="/img/Group 5.png" alt="">
+            <span>132 Reviews</span>
+            {{!-- <div>
                 <img src="../img/star.png" alt="" class="icon-star">
                 <img src="../img/star.png" alt="" class="icon-star">
                 <img src="../img/star.png" alt="" class="icon-star">
@@ -68,7 +71,7 @@
             </div>
             <div>
                 <p>102 Reviews</p>
-            </div>
+            </div> --}}
         </div>
         <div class="dp-numberProduct">
             <table>
@@ -77,13 +80,17 @@
                         <p>Quantity</p>
                     </td>
                     <td>
-                        <button id="button-minus-number-product">-</button>
+                        <button id="button-minus-number-product">
+                            <i class="fas fa-minus"></i>
+                        </button>
                     </td>
                     <td>
                         <p id="number-product">1</p>
                     </td>
                     <td>
-                        <button id="button-add-number-product">+</button>
+                        <button id="button-add-number-product">
+                            <i class="fas fa-plus"></i>
+                        </button>
                     </td>
                 </tr>
             </table>
@@ -102,7 +109,8 @@
 <div>
     <!-- header -->
     <div id="dp-grid-detailProducts">
-        <div class="dp-grid-detailProducts-item">
+        <div></div>
+        <div class="dp-grid-detailProducts-item open">
             <div class="grid-container-information-detail-product">
                 <div>
                     <p>DETAIL</p>
@@ -141,31 +149,41 @@
                 <p>detail information</p>
             </div>
         </div>
+        <div></div>
     </div>
-    <div id="dp-info-detailProduct">
-        <div style="padding: 10px;">
-            <p>Suitable for: Bakuchiol Serum is suitable for all skin, including sensitive types. </p>
-            <p>Target concerns: </p>
-            <p>+ Dullness/Uneven skin texture</p>
-            <p>+ Fine lines/Wrinkles </p>
-            <p>+ Dryness </p>
-            <p>Gentle enough for the most sensitive skin types, Bakuchiol works with the skin to refine the
-                appearance of fine lines and wrinkles with the power of natural botanicals.</p>
+    <div class="dp-info">
+        <div></div>
+        <div>
+            <div id="dp-info-detailProduct">
+                <div style="padding: 10px;">
+                    <p><b style="color: #000;">Suitable for:</b> Bakuchiol Serum is suitable for all skin, including sensitive types. </p>
+                    <br />
+                    <p><b style="color: #000;">Target concerns: </b></p>
+                    <p>+ Dullness/Uneven skin texture</p>
+                    <p>+ Fine lines/Wrinkles </p>
+                    <p>+ Dryness </p>
+                    <p>Gentle enough for the most sensitive skin types, Bakuchiol works with the skin to refine the
+                        appearance of fine lines and wrinkles with the power of natural botanicals.</p>
+                </div>
+                <div class="dp-morethan-detailProduct">
+                    <a href="">More...</a>
+                    <pre>
+                        <p>
+                        Target concerns: <br />
+                        + Dullness/Uneven skin texture  <br />
+                        + Fine lines/Wrinkles <br />
+                        + Dryness 
+                        </p>
+                    </pre>
+                </div>
+            </div>
         </div>
-        <div class="dp-morethan-detailProduct">
-            <a href="">More than ...</a>
-            <pre>
-                    Target concerns: 
-                    + Dullness/Uneven skin texture 
-                    + Fine lines/Wrinkles 
-                    + Dryness 
-                </pre>
-        </div>
+        <div></div>
     </div>
 </div>
 <!-- related products -->
 <div>
-    <div class="dp-table-relatedProducts">
+    {{!-- <div class="dp-table-relatedProducts">
         <table>
             <tr>
                 <td>
@@ -177,10 +195,10 @@
                 </td>
             </tr>
         </table>
-    </div>
+    </div> --}}
     <!-- related products -->
     <div class="dp-container-slide-relatedProducts">
-        <div class="db-btn-slide-relatedProducts">
+        {{!-- <div class="db-btn-slide-relatedProducts">
             <img class="db-btn-slide-relatedProducts left" src="../img/arrowleft.png" alt="">
         </div>
         <div class="dp-grid-slide-relatedProducts">
@@ -307,7 +325,276 @@
         </div>
         <div class="db-btn-slide-relatedProducts">
             <img class="db-btn-slide-relatedProducts right" src="../img/arrowright.png" alt="">
-        </div>
+        </div> --}}
+        <div class="product__header">
+                <h3 class="product__name">
+                    Related Products
+                </h3>
+            </div>
+            <div class="product__detail">
+                <div class="product__arrow">
+                    <i class="product__icon-arrow-left fas fa-chevron-left"></i>
+                </div>
+                <div class="product__item">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_Bakuchiol_Serum_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/icon-favor.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">Bakuchiol Retinol Alternative Smoothing Serum</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Group 5.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__item">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_Emerald_HempSeed_FaceOil_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/icon-favor.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+                        
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">Emerald Deep Moisture Glow Oil</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Group 5.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__item">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_Prism_12AHA_Exfoliating_FaceSerum_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/icon-favor.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">PRISM AHA + BHA Exfoliating Glow Serum
+                                </h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Group 5.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__item close">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_BlueTansy_Pores_FaceMask_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/icon-favor.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">Blue Tansy Invisible Pores Resurfacing Clarity Mask</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Group 5.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__item close">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_Brighten_Enzyme_FaceMask_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/icon-favor.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">Brighten Pineapple + Gemstone Mask</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Star.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__item close">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_CocoRose_BodyScrub_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/icon-favor.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">Coco Rose Exfoliating Body Scrub</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Star.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__arrow">
+                    <i class="product__icon-arrow-right fas fa-chevron-right"></i>
+                </div>
+            </div>
+    </div>
+    <div class="dp-container-slide-relatedProducts">
+        <div class="product__header">
+                <h3 class="product__name">
+                    Other Products
+                </h3>
+            </div>
+            <div class="product__detail">
+                <div class="product__arrow">
+                    <i class="product__icon-arrow-left fas fa-chevron-left"></i>
+                </div>
+                <div class="product__item">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_Phoenix_Antiaging_FaceOil_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/icon-favor.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">Phoenix Rosehip Anti Aging Face Oil - For Dry Skin</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Group 5.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__item">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_Lapis_BlueTansy_FaceOil_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/icon-favor.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">Phoenix Rosehip Anti Aging Face Oil - For Dry Skin</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Group 5.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__item">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_Orchid_Antioxidant_FaceOil_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/icon-favor.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">Phoenix Rosehip Anti Aging Face Oil - For Dry Skin</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Group 5.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__item close">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_Bakuchiol_Serum_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/Heart.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">Bakuchiol Retinol Alternative Smoothing Serum</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Group 5.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__item close">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_Emerald_HempSeed_FaceOil_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/Heart.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">Emerald Deep Moisture Glow Oil</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Star.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__item close">
+                    <div class="products-container-item">
+                        <div class="products-container-item__pic">
+                            <img src="/img/Herbivore_Prism_12AHA_Exfoliating_FaceSerum_Ecomm.jpg" alt="" class="products-container-item-img">
+                            <img src="/img/Heart.png" alt="Heart" class="products-container-item-heart">
+                        </div>
+
+                        <div class="products-container-item__info">
+                            <div class="product-name-box">
+                                <h4 class="product-name">PRISM AHA + BHA Exfoliating Glow Serum</h4>
+                            </div>
+                            <div class="product-review">
+                                <img src="/img/Star.png" alt="" class="product-review-img">
+                                <span class="product-review-number">220 Reviews</span>
+                            </div>
+                            <p class="product-price">$54.00</p>
+                        </div>
+                    </div>
+                    <button class="btn btn_buy-now">BUY NOW</button>
+                </div>
+                <div class="product__arrow">
+                    <i class="product__icon-arrow-right fas fa-chevron-right"></i>
+                </div>
+            </div>
     </div>
 </div>
 <!-- end related products -->
@@ -321,17 +608,17 @@
                 style="border: rgb(255, 255, 255) 1px solid;margin: 20px 0 10px 0;text-align: center;position: relative;">
                 <div style="position: absolute;top: 20%;left: 5%;right: 5%;">
                     <div>
-                        <p style="margin: 5px 0 5px 0;font-size: 1.5vmax;">4.8</p>
+                        <p style="margin: 5px 0 5px 0;font-family:'Roboto'; font-size: 2.8rem; font-weight: 700; color: #898989">4.8</p>
+                    </div>
+                    <div style="margin-top: 8px;">
+                        <img class="icon-star" src="../img/star.png" alt="">
+                        <img class="icon-star" src="../img/star.png" alt="">
+                        <img class="icon-star" src="../img/star.png" alt="">
+                        <img class="icon-star" src="../img/star.png" alt="">
+                        <img class="icon-star" src="../img/star.png" alt="">
                     </div>
                     <div>
-                        <img class="icon-star" src="../img/star.png" alt="">
-                        <img class="icon-star" src="../img/star.png" alt="">
-                        <img class="icon-star" src="../img/star.png" alt="">
-                        <img class="icon-star" src="../img/star.png" alt="">
-                        <img class="icon-star" src="../img/star.png" alt="">
-                    </div>
-                    <div>
-                        <p style="margin: 5px 0 5px 0;font-size: 1.5vmax;">132 reviews</p>
+                        <p style="margin: 5px 0 5px 0;font-family:'Roboto'; font-size: 1.6rem; font-weight: 400; color: #898989">132 reviews</p>
                     </div>
                 </div>
             </div>
@@ -342,8 +629,8 @@
                         <img class="icon-star" src="../img/star.png" alt="">
                     </div>
                     <div class="dp-number-reviews-1star">
-                        <p class="dp-number-reviews-1star total-border">b</p>
-                        <p class="dp-number-reviews-1star border-star star5" title="12 reviews">b</p>
+                        <div class="dp-number-reviews-1star total-border"></div>
+                        <div class="dp-number-reviews-1star border-star star5" title="12 reviews"></div>
                     </div>
                 </div>
                 <div class="dp-container-number-of-comment-1star">
@@ -352,8 +639,8 @@
                         <img class="icon-star" src="../img/star.png" alt="">
                     </div>
                     <div class="dp-number-reviews-1star">
-                        <p class="dp-number-reviews-1star total-border">b</p>
-                        <p class="dp-number-reviews-1star border-star star4" title="12 reviews">b</p>
+                        <div class="dp-number-reviews-1star total-border"></div>
+                        <div class="dp-number-reviews-1star border-star star4" title="12 reviews"></div>
                     </div>
                 </div>
                 <div class="dp-container-number-of-comment-1star">
@@ -362,8 +649,8 @@
                         <img class="icon-star" src="../img/star.png" alt="">
                     </div>
                     <div class="dp-number-reviews-1star">
-                        <p class="dp-number-reviews-1star total-border">b</p>
-                        <p class="dp-number-reviews-1star border-star star3" title="12 reviews">b</p>
+                        <div class="dp-number-reviews-1star total-border"></div>
+                        <div class="dp-number-reviews-1star border-star star3" title="12 reviews"></div>
                     </div>
                 </div>
                 <div class="dp-container-number-of-comment-1star">
@@ -372,8 +659,8 @@
                         <img class="icon-star" src="../img/star.png" alt="">
                     </div>
                     <div class="dp-number-reviews-1star">
-                        <p class="dp-number-reviews-1star total-border">b</p>
-                        <p class="dp-number-reviews-1star border-star star2" title="12 reviews">b</p>
+                        <div class="dp-number-reviews-1star total-border"></div>
+                        <div class="dp-number-reviews-1star border-star star2" title="12 reviews"></div>
                     </div>
                 </div>
                 <div class="dp-container-number-of-comment-1star">
@@ -382,18 +669,18 @@
                         <img class="icon-star" src="../img/star.png" alt="">
                     </div>
                     <div class="dp-number-reviews-1star">
-                        <p class="dp-number-reviews-1star total-border">b</p>
-                        <p class="dp-number-reviews-1star border-star star1" title="12 reviews">b</p>
+                        <div class="dp-number-reviews-1star total-border"></div>
+                        <div class="dp-number-reviews-1star border-star star1" title="12 reviews"></div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- comment -->
         <div>
-            <div class="dp-container-comments">
+            <div class="dp-container-comments ">
                 <div class="dp-container-comments container">
                     <div class="dp-comment-img">
-                        <img src="../img/avatar.png" alt="">
+                        <img src="/img/avt1.png" alt="">
                     </div>
                     <div class="dp-comment-info">
                         <p class="dp-comment-info name-client">BaekHuyn</p>
@@ -414,15 +701,14 @@
                         </p>
                     </div>
                 </div>
-                <hr class="dp-container-comments hr">
             </div>
             <div class="dp-container-comments">
                 <div class="dp-container-comments container">
                     <div class="dp-comment-img">
-                        <img src="../img/avatar.png" alt="">
+                        <img src="/img/avt2.png" alt="">
                     </div>
                     <div class="dp-comment-info">
-                        <p class="dp-comment-info name-client">BaekHuyn</p>
+                        <p class="dp-comment-info name-client">Chanyeol</p>
                         <div>
                             <img class="icon-star" src="../img/star.png" alt="">
                             <img class="icon-star" src="../img/star.png" alt="">
@@ -430,55 +716,82 @@
                             <img class="icon-star" src="../img/star.png" alt="">
                             <img class="icon-star" src="../img/star.png" alt="">
                         </div>
-                        <p class="dp-comment-info reviews">Love the serum</p>
+                        <p class="dp-comment-info reviews">Highest Compliment is a Repurchase</p>
                         <p class="dp-comment-info comment">
-                            Have heard about bakuchiol for a while, finally purchased this at a great beauty
-                            shop,
-                            Joia,
-                            in Northampton, MA. Love! Smoothing similar to retinol without the
-                            tingling/irritation.
+                            I'm nearing the end of my pregnancy but just repurchased (first bottle lasted 6 mos+). I have definitely noticed a difference, maybe more than a traditional retinol.
                         </p>
                     </div>
                 </div>
-                <hr class="dp-container-comments hr">
+            </div>
+            <div class="dp-container-comments">
+                <div class="dp-container-comments container">
+                    <div class="dp-comment-img">
+                        <img src="/img/avatar.png" alt="">
+                    </div>
+                    <div class="dp-comment-info">
+                        <p class="dp-comment-info name-client">Hieu Nguyen</p>
+                        <div>
+                            <img class="icon-star" src="../img/star.png" alt="">
+                            <img class="icon-star" src="../img/star.png" alt="">
+                            <img class="icon-star" src="../img/star.png" alt="">
+                            <img class="icon-star" src="../img/star.png" alt="">
+                            <img class="icon-star" src="../img/star.png" alt="">
+                        </div>
+                        <p class="dp-comment-info reviews">Highest Compliment is a Repurchase</p>
+                        <p class="dp-comment-info comment">
+                            I'm nearing the end of my pregnancy but just repurchased (first bottle lasted 6 mos+). I have definitely noticed a difference, maybe more than a traditional retinol.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- số trang -->
         <div id="container-number-page">
-            <span>
-                <svg class="icon-arrow-number-page left" aria-hidden="true" focusable="false" data-prefix="fas"
-                    data-icon="arrow-left" class="svg-inline--fa fa-arrow-left fa-w-14" role="img"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path fill="currentColor"
-                        d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z">
-                    </path>
-                </svg>
-            </span>
+            <div class="number-page-icon">
+                <img src="/img/Group 273.png" alt="">
+            </div>
             <span class="item-number-page active">1</span>
             <span class="item-number-page">2</span>
             <span class="item-number-page">3</span>
             <span class="item-number-page">...</span>
-            <span>
-                <svg class="icon-arrow-number-page right" aria-hidden="true" focusable="false" data-prefix="fas"
-                    data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path fill="currentColor"
-                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
-                    </path>
-                </svg>
-            </span>
+            <div class="number-page-icon">
+                <img src="/img/Group 274.png" alt="">
+            </div>
         </div>
     </div>
+    <div></div>
 </div>
-<div id="container-comment">
-    <p id="header-comment">Write a review about product</p>
-    <div>
-        <input type="text" placeholder="Title ..." class="information-comment">
+{{!-- them binh luan --}}
+<div class="add-comment">
+    <div></div>
+    <div class="new-comment">
+        <h3>Write a review about product</h3>
+        <span>Your Rating</span>
+        <div>
+            <img class="icon-star" src="../img/star.png" alt="">
+            <img class="icon-star" src="../img/star.png" alt="">
+            <img class="icon-star" src="../img/star.png" alt="">
+            <img class="icon-star" src="../img/star.png" alt="">
+            <img class="icon-star" src="../img/star.png" alt="">
+        </div>
+        <span>Review Title</span>
+        <input type="text" placeholder="Summary of your experience">
+        <span>Your Review</span>
+        <input type="text" placeholder="Give us some detail what you liked and disliked about the product">
+        <div class="new-cmt-btn">
+            <button class="btn btn_buy-now btn-add">SEND</button>
+        </div>
     </div>
-    <div>
-        <input type="text" placeholder="Your review ..." class="information-comment">
-    </div>
-    <div>
-        <button class="button-comment">SEND</button>
-    </div>
+    <div></div>
 </div>
+<script>
+    const btn = document.querySelector('.btn-add')
+    const cmt = document.querySelector('.dp-container-comments:nth-child(3)')
+
+    function addNewCmt(){
+        cmt.classList.add('open')
+    }
+
+    btn.addEventListener('click', addNewCmt)
+</script>
+<!-- end comment -->

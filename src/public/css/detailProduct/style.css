@@ -1,3 +1,56 @@
+html{
+    font-size: 62.5%;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --primary-color: #336d51;
+    --category-color: #E6ECE9;
+    --line-color: rgba(51, 109, 81, 0.2);
+    --sub-text-color: #acacac;
+    --text-color: #212B36;
+}
+.btn{
+    min-width: 120px;
+    border-radius: 20px;
+    padding: 12px 16px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.btn_buy-now{
+    width: 100%;
+    margin-top: 24px;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    border: 1px solid var(--primary-color);
+    transition-duration: .4s;
+}
+.btn_buy-now:hover{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+.products-container-item{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+.products-container-item:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+}
+
+
+
 #layout-grid-left-detail-product{
     display: grid;
     grid-template-columns: 15% 85%;
@@ -18,27 +71,60 @@
 /* grid right */
 
 .dp-titleProduct {
-    font-size: 3vmax;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    line-height: 3.6rem;
+    font-weight: 700;
     margin: 0 0 0 0;
+}
+.product-info-detail{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #7C7C7C;
+    line-height: 2.6rem;
+}
+
+.prodcut-type-detail{
+    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px solid #336D51;
+    margin-bottom: 24px;
+}
+.prodcut-type-item{
+    display: flex;
+    align-items: center;
+}
+.prodcut-type-item + .prodcut-type-item{
+    margin-left: 16px;
+}
+.prodcut-type-item span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #616161;
+    margin-left: 8px;
 }
 
 .dp-price {
-    font-weight: bold;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
     margin: 0 0 0 0;
 }
 
-.dp-star-reviews div {
+/* .dp-star-reviews div {
     float: left;
-    /* height: 25px; */
-}
+} */
 
 .dp-star-reviews {
-    display: block;
-    height: 25px;
-    margin: auto;
-    margin-top: 10px;
+    margin: 16px 0 24px;
+    display: flex;
+    align-items: center;
+}
+.dp-star-reviews span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 16px;
 }
 
 .dp-star-reviews p {
@@ -57,33 +143,55 @@
     width: 30px;
     height: 30px;
     margin: 15px;
+    cursor: pointer;
+}
+.dp-numberProduct button i{
+    font-size: 8px;
 }
 
-.dp-numberProduct p {
-    font-weight: bold;
+.dp-numberProduct p:nth-child(1) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+#number-product {
+    font-weight: 600;
 }
 
-#dp-btn-product button {
+/* #dp-btn-product button {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
     border: #336D51 solid 1px;
     border-radius: 20px;
+} */
+
+#dp-btn-product button{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transition-duration: .4s;
+    border-radius: 30px;
+    padding: 12px 16px;
+    border: 1px solid #336D51;
+    cursor: pointer;
 }
 
 #dp-addtocart {
-    background-color: #336D51;
+    margin: 24px 0 16px;
     color: white;
+    background-color: #336D51;
 }
 
 #dp-buynow {
-    background-color: white;
     color: #336D51;
+    background-color: #fff;
 }
 
 /*relatedProducts  */
 
-.dp-table-relatedProducts table {
+/* .dp-table-relatedProducts table {
     width: 100%;
     text-align: center;
 }
@@ -96,7 +204,7 @@
 .dp-table-relatedProducts hr {
     width: 20vw;
     text-align: right;
-    /* justify-content: right; */
+    justify-content: right;
     border: #336D51 0.5px solid;
 }
 
@@ -121,11 +229,11 @@
     grid-template-columns: 5% 90% 5%;
     margin: 10px 30px 10px 30px;
     text-align: center;
-}
+} */
 
 /* css 1 cục sản phẩm ( hình, tên, sao, reviews, button buy now) */
 
-.dp-container-products {
+/* .dp-container-products {
     padding: 10px;
 }
 
@@ -149,31 +257,31 @@
     position: absolute;
     top: 50%;
     right: 50%;
-}
+} */
 
 /* name */
 
-.dp-container-info-product-name {
+/* .dp-container-info-product-name {
     margin: 0 10px 5px 10px;
     font-size: 1.3vmax;
-}
+} */
 
 /* reviews */
 
-.dp-container-info-product-reviews {
+/* .dp-container-info-product-reviews {
     color: black;
     margin: 0;
     font-size: 1.3vmax;
-}
+} */
 
 /* price */
 
-.dp-container-info-product-price {
+/* .dp-container-info-product-price {
     color: #787878;
     font-weight: bold;
     margin: 0;
     font-size: 1.3vmax;
-}
+} */
 
 /* button buy now */
 
@@ -196,29 +304,42 @@
 
 #dp-grid-detailProducts {
     display: grid;
-    grid-template-columns: 33.33% 33.4% 33.33%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     text-align: center;
-    margin: 10px 250px 10px 250px;
+    margin: 32px 0 24px;
 }
 
-#dp-grid-detailProducts p {
-    font-weight: bold;
-    font-size: 2vmax;
-    margin: 0;
+.dp-grid-detailProducts-item.open p{
+    font-size: 20px;
+    font-weight: 600;
     color: #336D51;
+}
+.dp-grid-detailProducts-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
 }
 
 .div-img-information-detail-product, .information-detail-product {
     display: none;
 }
 
+.dp-info{
+    display: grid;
+    grid-template-columns: 7% 86% 7%;
+}
 #dp-info-detailProduct {
     background-color: #ffffff;
-    margin: 0 30px 0 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 15px rgba(0, 0,0, 0.05);
     border-radius: 5px;
 }
-
+.dp-morethan-detailProduct pre,
+#dp-info-detailProduct p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #7C7C7C;
+}
 #dp-info-detailProduct pre {
     padding: 10px 30px 10px 30px;
 }
@@ -228,9 +349,11 @@
 }
 
 .dp-morethan-detailProduct a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     display: flex;
     justify-content: right;
-    margin: 10px 20px 20px 0;
+    padding: 16px 16px;
     text-decoration: none;
     color: black;
     /* display: none; */
@@ -251,6 +374,7 @@
 
 .dp-category-comment-1star {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -261,28 +385,27 @@
 
 .dp-number-reviews-1star {
     position: relative;
-    margin: 0 50px 0 10px;
+    display: flex;
+    margin: 2px 0;
 }
 
 .dp-number-reviews-1star.total-border {
-    margin: 0;
-    position: absolute;
-    top: 20%;
     width: 100%;
     color: white;
     background-color: #D9D9D9;
     border-radius: 10px;
-    font-size: 10px;
 }
 
 .dp-number-reviews-1star.border-star {
-    margin: 0;
     color: #336D51;
     position: absolute;
-    top: 20%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     border-radius: 10px;
     background-color: #336D51;
-    font-size: 10px;
+    margin: 2px 0;
 }
 
 .dp-number-reviews-1star.border-star.star5 {
@@ -307,15 +430,19 @@
 
 /* comment */
 
-.dp-container-comments.hr {
-    width: 90%;
-    border: 0.5px solid #608d77;
+.dp-container-comments{
+    margin-top: 48px;
 }
-
+.dp-container-comments:nth-child(3)
+{
+    display: none;
+}
 .dp-container-comments.container {
     display: grid;
     grid-template-columns: 10% 90%;
-    margin: 10px 10px 10px 10px;
+    margin: 24px 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #336d51;
 }
 
 .dp-comment-img {
@@ -328,22 +455,46 @@
     border-radius: 50%;
 }
 
-.dp-comment-info.name-client, .dp-comment-info.reviews,.dp-comment-info.comment {
-    margin: 3px;
-    font-size: 1.5vmax;
+.dp-comment-info{
+    margin-left: 16px;
+}
+.dp-comment-info p{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .dp-comment-info.name-client {
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
+.dp-comment-info.reviews{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 24px;
+}
+.dp-comment-info.comment{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #898989;
+    margin-top: 12px;
+
+}
+
 
 
 /* number page */
 
 #container-number-page {
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     padding-right: 20px;
     margin: 20px;
+}
+.number-page-icon{
+    margin: 0 24px;
+    cursor: pointer;
 }
 
 .icon-arrow-number-page {
@@ -355,23 +506,77 @@
 
 .item-number-page {
     cursor: pointer;
-    font-size: 20px;
-    padding: 2px;
-    font-weight: bold;
+    margin: 0 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
     color: #898989;
 }
 
 .item-number-page.active {
     color: black;
 }
+.add-comment{
+    display: grid;
+    grid-template-columns: 20% 60%  20%;
+    margin-bottom: 60px;
+}
+.new-comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.new-comment h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #336d51;
+    text-align: center;
+}
+.new-comment span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 16px 0 8px;
+}
+.new-comment input{
+    width: 100%;
+    padding: 8px 16px;
+    border:  1px solid #336d51;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 1.4rem;
+    outline: none;
+    margin: 8px 0;
+}
+.new-cmt-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new-comment button{
+    width: 30%;
+    outline: none;
+} 
+.dp-container-comments:nth-child(3).open{
+    display: block;
+}
+
+
 
 /* rating bar */
 .dp-category-comment-1star-number{
-    font-size: 4vmin;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #898989;
     margin-right: 3px;
 }
 .dp-container-cmt{
-    margin: 10px 30px 10px 30px;
+    display: grid;
+    grid-template-columns: 12% 76% 12%;
+    margin-bottom: 48px;
 }
 .dp-container-ratingbar {
     display: grid;
