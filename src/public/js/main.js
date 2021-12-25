@@ -2,11 +2,16 @@
 window.addEventListener('scroll', function () {
     var someDiv = document.getElementById('top-page-container');
     var distanceToTop = someDiv.getBoundingClientRect().top;
-    if (distanceToTop < 0)
-        $('#anchor-top').css('display', 'block')
-    else
-        $('#anchor-top').css('display', 'none')
-    // console.log(distanceToTop);
+    if (distanceToTop < 0){
+
+        document.getElementById('anchor-top').style.display = 'block';
+        // $('#anchor-top').css('display', 'block')
+    }
+    else{
+        document.getElementById('anchor-top').style.display = 'none';
+        // $('#anchor-top').css('display', 'none')
+        // console.log(distanceToTop);
+    }
 });
 function resolveAfter2Seconds() {
     return new Promise(resolve => {
@@ -16,8 +21,9 @@ function resolveAfter2Seconds() {
     });
 }
 export async function showLoading(location) {
-    $('#container-loading').css('display', 'block')
+    document.getElementById('container-loading').style.display = 'block';
+    
     await resolveAfter2Seconds();
     window.location.href = location
-    $('#container-loading').css('display', 'none')
+    document.getElementById('container-loading').style.display = 'none';
 }

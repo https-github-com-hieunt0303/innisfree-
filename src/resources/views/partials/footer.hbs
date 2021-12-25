@@ -127,9 +127,10 @@
 
 <script>
     if(window.location.pathname =="/account" || window.location.pathname == "/confirm" || window.location.pathname == "/signIn"){
-        $('#footer').css('display','none')
+        document.getElementById("footer").style.display = "none";
+        
     }
     else{
-        $('#footer').css('display','block')
+        document.getElementById("footer").style.display = "block";
     }
 </script>

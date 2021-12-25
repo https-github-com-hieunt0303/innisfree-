@@ -1,19 +1,24 @@
 import { showLoading } from '../main.js';
 localStorage.removeItem('data-login')
+window.onload = function () {
+    //YOUR JQUERY CODE
+    function handleAccept() {
+        console.log(13)
 
-function handleAccept() {
-    console.log(13)
-    let phone = $('#account__form-input-phone').val()
-    let pass = $('#account__form-input-pass').val()
-    if (!phone || !pass || phone == '' || pass == '') {
-        alert('Hãy nhập đầy đủ thông tin.')
-    }
-    else {
-        // window.location.href='/'
-        localStorage.setItem('data-login', '1313')
-        showLoading('/')
-    }
+        let phone = document.getElementById('account__form-input-phone').value
+        let pass = document.getElementById('account__form-input-pass').value
+        if (!phone || !pass || phone == '' || pass == '') {
+            alert('Hãy nhập đầy đủ thông tin.')
+        }
+        else {
+            // window.location.href='/'
+            localStorage.setItem('data-login', '1313')
+            showLoading('/')
+        }
 
+
+    }
+    document.getElementById('handleAccept').addEventListener('click', handleAccept)
+    // $('#handleAccept').on('click', handleAccept)
 
 }
-$('#handleAccept').on('click', handleAccept)
