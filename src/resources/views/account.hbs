@@ -12,19 +12,19 @@
         <div class="grid-col-3 menu-responsive">
             <nav class="purchase-menu">
                 <ul class="purchase-menu__list">
-                    <a href="#voucher" class="purchase-menu__link">
+                    <a href="#profile" class="purchase-menu__link">
                         <li class="purchase-menu__item">
                             Information management
                             <i class="purchase-menu__icon fas fa-user"></i>
                         </li>
                     </a>
-                    <a href="#process" class="purchase-menu__link">
+                    <a href="#order" class="purchase-menu__link">
                         <li class="purchase-menu__item">
                             Order Management
                             <i class="purchase-menu__icon fas fa-truck"></i>
                         </li>
                     </a>
-                    <a href="#shipping" class="purchase-menu__link">
+                    <a href="#favor" class="purchase-menu__link">
                         <li class="purchase-menu__item">
                             Manage favorite products
                             <i class="purchase-menu__icon fas fa-heart"></i>
@@ -40,7 +40,7 @@
             </nav>
         </div>
         <div class="grid-col-7 info-responsive">
-            <div class="section01">
+            <div class="section01" id="profile">
                 <h4 class="purchase-info__heading">Update your account information</h4>
                 <form name="myForm" action="/mypage/action_page.php" onsubmit="return validateForm()" method="post">
                     <div class="row">
@@ -96,7 +96,7 @@
                 </form>
             </div>
             <!-- <hr size="1px" color="rgba(51, 109, 81, 0.2)"> -->
-            <div class="section02">
+            <div class="section02" id="order">
                 <div class="section02__header">
                     <h4 class="purchase-info__heading">Information of your order</h4>
                     <div class="orderStatus">
@@ -165,7 +165,7 @@
                 </table>
             </div>
             <!-- <hr size="1px" color="#000"> -->
-            <div class="section03">
+            <div class="section03" id="favor">
                 <h4 class="purchase-info__heading">Your favorite products</h4>
                 <div class="products-container">
                     <div class="products-container-row">
