@@ -1,12 +1,16 @@
-<script type="module" src="/js/header.js"></script>
-<link rel="stylesheet" href="/css/header.css">
+<script type="module" src="js/header.js"></script>
+<link rel="stylesheet" href="css/header.css">
 <div class="header">
     <div class="header-top">
         <div class="grid-header">
             <div>
                 <p id="notify-header">[Deal] Free $10 gift when buying combo of innisfree product</p>
             </div>
-            <div class="header-info">
+            <div class="header-info not-login" style="margin-top: 10px;font-size:12px">
+                <a href="/signIn" class="header-info-item account"
+                    style="color: white;text-decoration:none">Sign in/ Sign up</a>
+            </div>
+            <div class="header-info login">
                 <div class="header-info-account">
                     <img class="header-info-item" src="./img/avatar.png" alt="" id="avatar-user">
                     <b class="header-info-item account">Hieu Nguyen</b>
@@ -14,14 +18,14 @@
                         <ul class="header-info-list">
                             <li class="header-info-list-item">
                                 <h3>My account</h3>
-                            </li>    
+                            </li>
                             <li class="header-info-list-item">
                                 <a class="header-info-link" href="/account">
                                     <i class="fas fa-user"></i>
                                     Profile
                                 </a>
                             </li>
-                             <li class="header-info-list-item">
+                            <li class="header-info-list-item">
                                 <a class="header-info-link" href="myorder">
                                     <i class="fas fa-file-invoice"></i>
                                     Order
@@ -32,18 +36,18 @@
                                     <i class="fas fa-heart"></i>
                                     Favorite
                                 </a>
-                            </li>    --}}
+                            </li> --}}
                             <li class="header-info-list-item">
                                 <a class="header-info-link" href="/signIn">
                                     <i class="fas fa-sign-out-alt"></i>
                                     Sign out
                                 </a>
-                            </li>            
+                            </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="header-info-order">
-                    <i class="fas fa-truck header-info-item header-icon" ></i>
+                    <i class="fas fa-truck header-info-item header-icon"></i>
                     <p class="header-info-item order">Check your order</p>
                 </div>
             </div>
@@ -234,17 +238,12 @@
                     </div>
                 </div>
             </div>
-            <img src="./img/icon-search.png" alt="" class="header-menu-right-icon">
+            <img src="./img/icon-search.png" alt="" class="header-menu-right-icon search" onclick="handleSearch()">
         </div>
     </div>
 </div>
 
 
 <script>
-    if(window.location.pathname == "/signIn"){
-        $('.header').css('display','none')
-    }
-    else{
-        $('.header').css('display','block')
-    }
+ 
 </script>

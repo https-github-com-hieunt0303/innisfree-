@@ -163,6 +163,7 @@ $(document).ready(function () {
         if (!checkActive) {
             $('.products-container-item-heart').eq(index).addClass('active')
             $('.products-container-item-heart').eq(index).attr('src', 'img/account&order/Heart.png')
+            $('.products-container-item-heart').eq(index).css('font-size', '30px')
         }
         else {
             $('.products-container-item-heart').eq(index).removeClass('active')

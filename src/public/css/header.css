@@ -5,18 +5,17 @@
 #notify-header {
     font-size: 12px;
     opacity: 1;
-    animation: mymove 5s infinite;
+    animation: mymove 4s infinite;
     position: relative;
-    animation-delay: 5s;
     margin-left: 32px;
 }
 
 @keyframes mymove {
     from {
-        top: 0px;
+        opacity: 0;
     }
     to {
-        top: -40px;
+        opacity: 1;
     }
 }
 .header-top {
@@ -43,7 +42,7 @@
 }
 
 .header-info{
-    display: flex;
+    /* display: flex; */
     justify-content: end;
     margin-right: 24px;
 }
@@ -106,9 +105,9 @@
     background-color: #336D51;
 }
 .grid-header {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    
+    display: flex;
+    justify-content: space-between;
 }
 
 /* header menu */

@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/css/products/base.css">
 <link rel="stylesheet" href="/css/products/style.css">
 <link rel="stylesheet" href="/css/products/responsive.css">
+<script type="module" src="js/products/index.js"></script>
 <div class="products">
     <div class="product-heading">
         <span class="product-heading__label">Products / face</span>
@@ -10,10 +11,21 @@
             <h2 class="category-name">FACE</h2>
             <div class="products-filter">
                 <div class="products-filter__search">
-                    <input type="text" class="products-filter__search-input" placeholder="Search...">
+                    <input type="text" class="products-filter__search-input" placeholder="Search..."
+                        id="search-products">
+
                     <button class="products-filter__search-btn">
                         <i class="products-filter__search-icon fas fa-search"></i>
                     </button>
+                    <ul id="container-menu-search">
+                        <li onkeydown="handleClick()">Phoenix Rosehip Anti Aging Face Oil - For Dry Skin</li>
+                        <li>Bakuchiol Retinol Alternative Smoothing Serum</li>
+                        <li>Emerald Deep Moisture Glow Oil</li>
+                        <li>PRISM AHA + BHA Exfoliating Glow Serum</li>
+                        <li>Blue Tansy Invisible Pores Resurfacing Clarity Mask</li>
+                        <li>Brighten Pineapple + Gemstone Mask</li>
+                        <li>Coco Rose Exfoliating Body Scrub</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -119,8 +131,7 @@
                                 <div class="products-container-item__pic">
                                     <img src="/img/home/Herbivore_Phoenix_Antiaging_FaceOil_Ecomm.jpg" alt=""
                                         class="products-container-item-img">
-                                    <img src="/img/home/Heart.png" alt="Heart"
-                                        class="products-container-item-heart">
+                                    <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
                                 </div>
 
                                 <div class="products-container-item__info">
@@ -142,8 +153,7 @@
                                 <div class="products-container-item__pic">
                                     <img src="/img/home/Herbivore_Lapis_BlueTansy_FaceOil_Ecomm.jpg" alt=""
                                         class="products-container-item-img">
-                                    <img src="/img/home/Heart.png" alt="Heart"
-                                        class="products-container-item-heart">
+                                    <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
                                 </div>
 
                                 <div class="products-container-item__info">
@@ -165,8 +175,7 @@
                                 <div class="products-container-item__pic">
                                     <img src="/img/home/Herbivore_Orchid_Antioxidant_FaceOil_Ecomm.jpg" alt=""
                                         class="products-container-item-img">
-                                    <img src="/img/home/Heart.png" alt="Heart"
-                                        class="products-container-item-heart">
+                                    <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
                                 </div>
 
                                 <div class="products-container-item__info">
@@ -188,8 +197,7 @@
                                 <div class="products-container-item__pic">
                                     <img src="/img/home/Herbivore_Bakuchiol_Serum_Ecomm.jpg" alt=""
                                         class="products-container-item-img">
-                                    <img src="/img/home/Heart.png" alt="Heart"
-                                        class="products-container-item-heart">
+                                    <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
                                 </div>
 
                                 <div class="products-container-item__info">
@@ -212,8 +220,7 @@
                                 <div class="products-container-item__pic">
                                     <img src="/img/home/Herbivore_Emerald_HempSeed_FaceOil_Ecomm.jpg" alt=""
                                         class="products-container-item-img">
-                                    <img src="/img/home/Heart.png" alt="Heart"
-                                        class="products-container-item-heart">
+                                    <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
                                 </div>
 
                                 <div class="products-container-item__info">
@@ -233,10 +240,9 @@
                         <div class="grid-col-7-3">
                             <div class="products-container-item">
                                 <div class="products-container-item__pic">
-                                    <img src="/img/home/Herbivore_Prism_12AHA_Exfoliating_FaceSerum_Ecomm.jpg"
-                                        alt="" class="products-container-item-img">
-                                    <img src="/img/home/Heart.png" alt="Heart"
-                                        class="products-container-item-heart">
+                                    <img src="/img/home/Herbivore_Prism_12AHA_Exfoliating_FaceSerum_Ecomm.jpg" alt=""
+                                        class="products-container-item-img">
+                                    <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
                                 </div>
 
                                 <div class="products-container-item__info">
@@ -259,8 +265,7 @@
                                 <div class="products-container-item__pic">
                                     <img src="/img/home/Herbivore_BlueTansy_Pores_FaceMask_Ecomm.jpg" alt=""
                                         class="products-container-item-img">
-                                    <img src="/img/home/Heart.png" alt="Heart"
-                                        class="products-container-item-heart">
+                                    <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
                                 </div>
 
                                 <div class="products-container-item__info">
@@ -283,8 +288,7 @@
                                 <div class="products-container-item__pic">
                                     <img src="/img/home/Herbivore_Brighten_Enzyme_FaceMask_Ecomm.jpg" alt=""
                                         class="products-container-item-img">
-                                    <img src="/img/home/Heart.png" alt="Heart"
-                                        class="products-container-item-heart">
+                                    <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
                                 </div>
 
                                 <div class="products-container-item__info">
@@ -306,8 +310,7 @@
                                 <div class="products-container-item__pic">
                                     <img src="/img/home/Herbivore_CocoRose_BodyScrub_Ecomm.jpg" alt=""
                                         class="products-container-item-img">
-                                    <img src="/img/home/Heart.png" alt="Heart"
-                                        class="products-container-item-heart">
+                                    <img src="/img/home/Heart.png" alt="Heart" class="products-container-item-heart">
                                 </div>
 
                                 <div class="products-container-item__info">
