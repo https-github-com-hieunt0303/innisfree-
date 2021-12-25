@@ -439,6 +439,9 @@ ul {
 }
 
 @media (max-width:600px) {
+    #footer{
+        padding: 10px;
+    }
     #header-menu, .header-top, .header-menu-right, #footer-ending {
         display: none;
     }

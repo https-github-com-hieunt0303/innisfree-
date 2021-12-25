@@ -6,15 +6,15 @@ window.onload = function () {
             randomTextHeader()
         }
         , 4000)
-    const currentPath = window.location.pathname
-    setActiveMenuPage(currentPath)
+    
 
     document.getElementsByClassName('header-menu-right-icon search')[0].addEventListener('click', function () {
-        showLoading('products') 
+        showLoading('products')
     })
 
 }
-
+const currentPath = window.location.pathname
+    setActiveMenuPage(currentPath)
 //your code here
 if (window.location.pathname == "/signIn") {
     document.getElementsByClassName('header')[0].style.display = "none"
@@ -41,12 +41,14 @@ function setActiveMenuPage(currentPath) {
 
     let activeMenu
     switch (currentPath) {
-        case '/detailProduct': {
-            activeMenu = 2
-            break
-        }
         case '/': {
             activeMenu = 1
+            break
+        }
+        case '/productAll':
+        case '/products':
+        case '/detailProduct': {
+            activeMenu = 2
             break
         }
         case '/purchase': {
