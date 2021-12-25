@@ -378,3 +378,55 @@
     grid-template-columns: 30% 70%;
     margin: 5px 300px 5px 300px;
 }
+
+#container-comment{
+    text-align: center;
+}
+#header-comment{
+    color: #336D51;
+    font-weight: bold;
+    font-size: 2vmax;
+}
+.information-comment{
+    margin: 10px;
+    width: 70%;
+    padding: 10px;
+    border: #336D51 1px solid;
+    border-radius: 5px;
+
+}
+.button-comment{
+    background-color: #336D51;
+    cursor: pointer;
+    width: 20%;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: #336D51 1px solid;
+}
+.button-comment:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5)
+}
+
+.prodcut-type-detail{
+    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px solid #336D51;
+    margin-bottom: 24px;
+}
+.prodcut-type-item{
+    display: flex;
+    align-items: center;
+}
+.prodcut-type-item + .prodcut-type-item{
+    margin-left: 16px;
+}
+.prodcut-type-item span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #616161;
+    margin-left: 8px;
+}

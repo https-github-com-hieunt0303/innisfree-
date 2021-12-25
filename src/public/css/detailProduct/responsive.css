@@ -27,7 +27,7 @@
         grid-template-columns: 25% 25% 25% 25%;
         margin: 5px 20px 5px 20px;
     }
-    #detail-information-header-product, #detail-header-information-header-product, #container-anchor-top, #dp-info-detailProduct {
+    #detail-information-header-product, #detail-header-information-header-product, #container-anchor-top, #dp-info-detailProduct,.prodcut-type-detail {
         display: none;
     }
     .div-img-information-detail-product {
